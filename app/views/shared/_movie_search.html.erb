@@ -1,0 +1,6 @@
+<%= form_tag "/movies", method: :get do %>
+  <%= label_tag :keywords %>:<br>
+  <%= text_field_tag :keywords %><br>
+
+  <%= submit_tag "Search By Movie Title", class: :button %>
+<% end %>

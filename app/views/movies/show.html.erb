@@ -1,0 +1,38 @@
+<p><%= button_to 'Create Viewing Party', "/new_party/#{current_user.id}/#{@movie.title}/#{@movie.runtime}", method: :get %></p>
+
+<h1><%= @movie.title %></h1>
+
+<h2>Details:</h2>
+<p>Vote Average: <%= @movie.vote_average %></p>
+<p>Runtime: <%= @movie.translate_runtime %></p>
+<p>Genres:</p>
+<% @movie.genres.each do |genre| %>
+  <%= genre %>
+<% end %>
+
+<h2>Description:</h2>
+<p><%= @movie.overview %></p>
+
+<h2>Actors: </h2>
+<% @movie.cast.each do |actor| %>
+  <p><%= actor[:name] %> as <%= actor[:character] %></p>
+<% end %>
+
+<h2>Reviews: </h2>
+<h3>Total Reviews: <%= @movie.reviews.count %></h3>
+<h4>Review Authors:</h4>
+<% @movie.reviews.each do |review_detail| %>
+  <p><%= review_detail[:author] %></p>
+<% end %>
+
+<h2>New York Times Review Link:</h2>
+<% unless @movie.nyt_review.nil? %>
+  <p><%=  link_to @movie.nyt_review.headline, "#{@movie.nyt_review.url}" %></p>
+<% else %>
+  <p>The New York Times has not reviewed this film</p>
+<% end %>
+
+<h2>Similar Films:</h2>
+<% @movie.similar_films.each do |film| %>
+  <%= film[:title] %>
+<% end %>

@@ -8,6 +8,6 @@ script:
 - bundle exec rspec
 deploy:
   provider: heroku
-  api_key: f905331b6149d6abe03629c65fd15007
+  api_key: 952d69803af50da5bf5ae95e62253d770808a1edd1272e88c97ca61c17ff2067f8634ca1d16c98a8cf540cec8e37446dba881d4dc8326d1c88db33157353cef3
   app: https://boiling-hamlet-64107.herokuapp.com/
   run: rails db:migrate

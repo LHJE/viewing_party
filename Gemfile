@@ -7,6 +7,10 @@ end
 
 ruby '2.5.3'
 
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'faraday'
+
 gem 'rails', '5.2.4.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
@@ -15,10 +19,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'bootsnap'
 gem 'jbuilder', '~> 2.5'
+gem "figaro"
 
 group :development, :test do
   gem 'pry'
   gem 'travis'
+  gem "nyan-cat-formatter"
 end
 
 group :development do
@@ -33,6 +39,12 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'webmock'
+  gem 'vcr'
+end
+
+group :test do
+  gem 'shoulda-matchers'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

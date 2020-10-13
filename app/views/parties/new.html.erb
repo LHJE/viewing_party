@@ -1,0 +1,19 @@
+<%= form_with model: @party, local: true do |f|  %>
+
+  <%= f.label :movie_title %><br>
+  <%= f.text_field :movie_title, value: params[:movie_title].titleize ,:readonly => true %><br>
+
+  <%= f.label :party_duration %><br>
+  <%= f.number_field :party_duration, value: params[:movie_runtime] %><br>
+
+  <%= f.label :party_date %><br>
+  <%= f.date_field :party_date %><br>
+
+  <%= f.label :start_time %><br>
+  <%= f.time_field :start_time %><br>
+
+  Include:
+  <%= f.collection_check_boxes :invitees, current_user.friends, :id, :name %><br>
+
+  <%= f.submit 'Create Party' %><br>
+<% end %>

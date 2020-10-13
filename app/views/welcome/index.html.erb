@@ -1,0 +1,14 @@
+<h1>Welcome to Viewing Party!</h1>
+<h3>This is the premier website for planning your next movie night!</h3>
+
+<% if !current_user %>
+  <%= form_tag "/login", method: :post do %>
+    <%= label_tag :email %><br>
+    <%= text_field_tag :email %><br>
+    <%= label_tag :password %><br>
+    <%= text_field_tag :password %><br>
+
+    <%= submit_tag "Log In", class: :button %>
+    <p><%= link_to 'Register', "/register" %></p>
+  <% end %>
+<% end  %>

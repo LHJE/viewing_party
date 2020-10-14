@@ -4,7 +4,7 @@ RSpec.describe 'Viewing Party' do
   describe 'As a visitor' do
     describe "When I visit the new viewing party page" do
       it "I can see a message telling me to login to see this page" do
-        @user = User.create!(name: 'Phil', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+        @user = User.create!(name: 'Phil', email: 'x@x.com', password: 'x', password_confirmation: 'x')
         visit "/new_party/#{@user.id}/princess_mononoke/134"
 
         expect(page).to have_content("This Page Only Accessible by Authenticated Users. Please Log In.")
@@ -14,7 +14,7 @@ RSpec.describe 'Viewing Party' do
   end
   describe "As a logged in user" do
       before :each do
-        @user = User.create!(name: 'Phil', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+        @user = User.create!(name: 'Phil', email: 'x@x.com', password: 'x', password_confirmation: 'x')
         @user1 = User.create!(name: 'Jade', email: 'b@a.com', password: 'a', password_confirmation: 'a')
         @user2 = User.create!(name: 'Robert', email: 'c@a.com', password: 'a', password_confirmation: 'a')
         @user3 = User.create!(name: 'Luke', email: 'd@a.com', password: 'a', password_confirmation: 'a')

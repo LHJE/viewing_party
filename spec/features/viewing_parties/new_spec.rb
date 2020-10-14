@@ -3,7 +3,7 @@ require 'rails_helper'
 feature 'New viewing party' do
   scenario "User visits a new viewing party page", :vcr do
 
-    @user = User.create!(name: 'Phil', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+    @user = User.create!(name: 'Phil', email: 'x@x.com', password: 'x', password_confirmation: 'x')
     @user1 = User.create!(name: 'Jade', email: 'b@a.com', password: 'a', password_confirmation: 'a')
     @user2 = User.create!(name: 'Robert', email: 'c@a.com', password: 'a', password_confirmation: 'a')
     @user3 = User.create!(name: 'Luke', email: 'd@a.com', password: 'a', password_confirmation: 'a')

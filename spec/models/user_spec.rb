@@ -9,9 +9,9 @@ RSpec.describe User do
   end
 
   it ".all_parties" do
-    user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
-    user_2 = User.create(name: 'Cynthia Rothrock', email: 'b@b.com', password: 'b', password_confirmation: 'b')
-    user_3 = User.create(name: 'Michelle Yeoh', email: 'c@c.com', password: 'c', password_confirmation: 'c')
+    user_1 = User.create(name: 'Jackie Chan', email: 'qw@qw.com', password: 'qw', password_confirmation: 'qw')
+    user_2 = User.create(name: 'Cynthia Rothrock', email: 'yu@b.com', password: 'b', password_confirmation: 'b')
+    user_3 = User.create(name: 'Michelle Yeoh', email: 'yu@c.com', password: 'c', password_confirmation: 'c')
 
     party_1 = Party.create(movie_title: "The Exorcist III",user_id: user_1.id, date: "October 26th, 1997", time: "1:45pm")
     party_2 = Party.create(movie_title: "Psycho II",user_id: user_1.id, date: "June 2nd, 1998", time: "2:45pm")

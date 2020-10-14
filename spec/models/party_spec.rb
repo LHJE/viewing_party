@@ -9,10 +9,10 @@ RSpec.describe Party, type: :model do
   end
 
   it "can determine a users status" do
-    user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
-    user_2 = User.create(name: 'Cynthia Rothrock', email: 'b@b.com', password: 'b', password_confirmation: 'b')
-    user_3 = User.create(name: 'Michelle Yeoh', email: 'c@c.com', password: 'c', password_confirmation: 'c')
-    user_4 = User.create(name: 'Bilbo Baggins', email: 'd@d.com', password: 'd', password_confirmation: 'd')
+    user_1 = User.create(name: 'Jackie Chan', email: 'qw@qw.com', password: 'qw', password_confirmation: 'qw')
+    user_2 = User.create(name: 'Cynthia Rothrock', email: 'ty@b.com', password: 'b', password_confirmation: 'b')
+    user_3 = User.create(name: 'Michelle Yeoh', email: 'ty@c.com', password: 'c', password_confirmation: 'c')
+    user_4 = User.create(name: 'Bilbo Baggins', email: 'ty@d.com', password: 'd', password_confirmation: 'd')
     party_1 = Party.create(movie_title: "The Exorcist III", user_id: user_1.id, date: "October 26th, 1997", time: "1:45pm")
 
     expect(party_1.user_status(user_1.id)).to eq('Host')

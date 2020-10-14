@@ -4,7 +4,7 @@ include ActionView::Helpers::NumberHelper
 RSpec.describe 'Login' do
   describe 'As an visitor user' do
     before :each do
-      @user = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+      @user = User.create(name: 'Jackie Chan', email: 'rt@a.com', password: 'a', password_confirmation: 'a')
 
       visit root_path
     end

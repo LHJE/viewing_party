@@ -15,7 +15,7 @@ end
 
 feature 'Details for a movie' do
   before :each do
-    @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+    @user_1 = User.create(name: 'Jackie Chan', email: '56@56.com', password: '56', password_confirmation: '56')
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
     visit register_path
   end

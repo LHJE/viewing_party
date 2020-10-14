@@ -68,7 +68,7 @@ RSpec.describe 'User Registration' do
   describe 'As an authenticated user' do
     describe "When I visit the register page" do
       before :each do
-        @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+        @user_1 = User.create(name: 'Jackie Chan', email: '90@90.com', password: '90', password_confirmation: '90')
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
         visit register_path
       end

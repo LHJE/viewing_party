@@ -14,7 +14,7 @@ RSpec.describe 'Discover Movies' do
   describe 'As an authenticated user' do
     describe "When I visit the discover page" do
       before :each do
-        @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+        @user_1 = User.create(name: 'Jackie Chan', email: '89@89.com', password: '89', password_confirmation: '89')
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
         visit '/discover'
       end
@@ -33,11 +33,11 @@ end
 
 feature 'Results for top 40 movies' do
   before :each do
-    @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+    @user_1 = User.create(name: 'Jackie Chan', email: '78@78.com', password: '78', password_confirmation: '78')
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
     visit '/discover'
   end
-  
+
   scenario "User clicks the top 40 button", :vcr do
       click_button('Discover Top 40')
       expect(current_path).to eq('/movies')

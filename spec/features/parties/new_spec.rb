@@ -76,6 +76,48 @@ RSpec.describe 'Viewing Party' do
           end
         end
       end
+
+      describe "When I submit an incomplete form" do
+        describe "With no friends selected" do
+          it "I'm redirected to my dashboard" do
+            fill_in 'party_date', with: "10/31/2020"
+            fill_in 'start_time', with: '09:59 PM'
+            click_button 'Create Party'
+            expect(current_path).to eq('/user/dashboard')
+          end
+
+          it "I see the party I've created with a status of 'Host'" do
+            fill_in 'party_date', with: "10/31/2020"
+            fill_in 'start_time', with: '09:59 PM'
+            click_button 'Create Party'
+
+            within "#parties" do
+              expect(page).to have_content("Princess Mononoke")
+              expect(page).to have_content("Date: 10/31/2020")
+              expect(page).to have_content("Time: 09:59 PM")
+              expect(page).to have_content("Status: Host")
+            end
+          end
+        end
+
+        describe "With no time" do
+          it "I see an error message" do
+            fill_in 'party_date', with: "10/31/2020"
+            click_button 'Create Party'
+
+            expect(page).to have_content("Time can't be blank")
+          end
+        end
+
+        describe "With no date" do
+          it "I see an error message" do
+            fill_in 'start_time', with: '09:59 PM'
+            click_button 'Create Party'
+
+            expect(page).to have_content("Date can't be blank")
+          end
+        end
+      end
     end
   end
 end

@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 14 Oct 2020 21:29:54 GMT
+      - Wed, 14 Oct 2020 23:10:37 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -31,7 +31,7 @@ http_interactions:
       Cache-Control:
       - max-age=600
       Expires:
-      - Wed, 14 Oct 2020 21:39:54 GMT
+      - Wed, 14 Oct 2020 23:20:27 GMT
       Server:
       - Apache/2.2.15 (CentOS)
       Accept-Ranges:
@@ -39,15 +39,15 @@ http_interactions:
       Via:
       - 1.1 varnish
       Age:
-      - '0'
+      - '9'
       X-Served-By:
-      - cache-sjc10067-SJC
+      - cache-pao17448-PAO
       X-Cache:
-      - MISS
+      - HIT
       X-Cache-Hits:
-      - '0'
+      - '1'
       X-Timer:
-      - S1602710994.635158,VS0,VE461
+      - S1602717037.428384,VS0,VE1
       Vary:
       - Accept-Encoding
       Access-Control-Allow-Origin:
@@ -68,5 +68,5 @@ http_interactions:
         delivery is off.","publication_date":"2009-06-18","opening_date":"2009-07-03","date_updated":"2017-11-02
         04:18:09","link":{"type":"article","url":"http:\/\/www.nytimes.com\/2009\/06\/19\/movies\/19whatever.html","suggested_link_text":"Read
         the New York Times Review of Whatever Works"},"multimedia":null}]}'
-  recorded_at: Wed, 14 Oct 2020 21:29:54 GMT
+  recorded_at: Wed, 14 Oct 2020 23:10:37 GMT
 recorded_with: VCR 6.0.0

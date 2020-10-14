@@ -1,0 +1,361 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/724089?api_key=<MOVIEDB_API_KEY>&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<MOVIEDB_API_KEY>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 14 Oct 2020 17:43:23 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - f72a3389d7f7e13d417f736c86286d3c
+      X-Memc-Age:
+      - '8564'
+      X-Memc-Expires:
+      - '13036'
+      Etag:
+      - W/"641d1181ec9a53261b6b50091c7958c6"
+      Last-Modified:
+      - Wed, 14 Oct 2020 17:43:22 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 2ad801a60bd36fbeb6a62fab7eabe330.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - wKVFIIHIelKRxIwayPZax8H_SoRXMsKkD9gWl0pNx0EORrA2K1oMWQ==
+      Age:
+      - '19627'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/jtAI6OJIWLWiRItNSZoWjrsUtmi.jpg","belongs_to_collection":{"id":729322,"name":"Gabriel''s
+        Inferno Collection","poster_path":null,"backdrop_path":null},"budget":0,"genres":[{"id":10749,"name":"Romance"}],"homepage":"https://watch.passionflix.com/watch/f299fa17-5a2b-4fee-b53a-a4651747431b","id":724089,"imdb_id":"tt11641654","original_language":"en","original_title":"Gabriel''s
+        Inferno Part II","overview":"Professor Gabriel Emerson finally learns the
+        truth about Julia Mitchell''s identity, but his realization comes a moment
+        too late. Julia is done waiting for the well-respected Dante specialist to
+        remember her and wants nothing more to do with him. Can Gabriel win back her
+        heart before she finds love in another''s arms?","popularity":12.087,"poster_path":"/pci1ArYW7oJ2eyTo2NMYEKHHiCP.jpg","production_companies":[{"id":92153,"logo_path":"/psjvYkjjgAPtS8utnFYDM8t8yi7.png","name":"PassionFlix","origin_country":"US"}],"production_countries":[],"release_date":"2020-07-31","revenue":0,"runtime":105,"spoken_languages":[{"iso_639_1":"en","name":"English"}],"status":"Released","tagline":"","title":"Gabriel''s
+        Inferno Part II","video":false,"vote_average":8.9,"vote_count":884}'
+  recorded_at: Wed, 14 Oct 2020 23:10:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/724089/credits?api_key=<MOVIEDB_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<MOVIEDB_API_KEY>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 14 Oct 2020 17:43:23 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - ce0a2a50ec2f08730264b4164ae0dc5d
+      X-Memc-Age:
+      - '910'
+      X-Memc-Expires:
+      - '20690'
+      Etag:
+      - W/"7dc5114a3d99860abe3acdfee47b2d56"
+      Last-Modified:
+      - Wed, 14 Oct 2020 17:43:23 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 29f1da35ce271d2cdc88184ed0c1f86d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - bc4tsPGAniDlxamoVjxHuHOSRxS4lUn12NuJvhM2lva7IUyY0ksVRA==
+      Age:
+      - '19627'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":724089,"cast":[{"cast_id":1,"character":"Julia Mitchell","credit_id":"5f25dbe72d8ef30035d4c8d8","gender":1,"id":1312450,"name":"Melanie
+        Zanetti","order":1,"profile_path":"/lbUQ7ilvBtWMU23reKsHg3jRmsf.jpg"},{"cast_id":2,"character":"Gabriel
+        Emerson","credit_id":"5f25dbff0231f200381c6aca","gender":2,"id":544002,"name":"Giulio
+        Berruti","order":2,"profile_path":"/ktPKniWGVkm6eBG7a2R7WGd96kZ.jpg"},{"cast_id":3,"character":"Paul
+        Norris","credit_id":"5f25dec27d41aa0035679e49","gender":0,"id":2345991,"name":"James
+        Andrew Fraser","order":3,"profile_path":null},{"cast_id":4,"character":"Christa
+        Peterson","credit_id":"5f25dedf8d1b8e00336b32dd","gender":1,"id":2595115,"name":"Margaux
+        Brooke","order":4,"profile_path":"/leLl5l6KnjMdg5O48FhDfB7GquI.jpg"},{"cast_id":5,"character":"Paulina","credit_id":"5f25def0d9403500355868e0","gender":1,"id":2267910,"name":"Agnes
+        Albright","order":5,"profile_path":"/a1UVXkIFONmwjr0Cxydc0jQHPFq.jpg"},{"cast_id":6,"character":"Professor
+        Tara Chakravartty","credit_id":"5f25df10dbbb420033e0416b","gender":1,"id":109024,"name":"Purva
+        Bedi","order":6,"profile_path":"/oppODJvFwISpFnOfhSc2sB2b4Zq.jpg"},{"cast_id":7,"character":"Soraya","credit_id":"5f25df26d94035003757ec12","gender":1,"id":206423,"name":"Sahar
+        Bibiyan","order":7,"profile_path":"/7SlWvJbXlnwbMeJSWMdzmI8wRAC.jpg"},{"cast_id":8,"character":"Professor
+        Robert Mwangi","credit_id":"5f25df45869e7500385c715d","gender":0,"id":1784954,"name":"Cedric
+        Cannon","order":8,"profile_path":null},{"cast_id":9,"character":"Professor
+        Jeremy Martin","credit_id":"5f25df5ce194b00038906133","gender":2,"id":1326237,"name":"Ned
+        Van Zandt","order":9,"profile_path":"/lJK2Bk79xhP133piZ03p4d6rsD0.jpg"}],"crew":[{"credit_id":"5f275762e267de0036001dd5","department":"Camera","gender":2,"id":22143,"job":"Director
+        of Photography","name":"Denis Maloney","profile_path":null},{"credit_id":"5f25e0067d41aa003567a0bd","department":"Production","gender":1,"id":41654,"job":"Casting","name":"Lindsay
+        Chag","profile_path":null},{"credit_id":"5f25df960231f200371b0336","department":"Directing","gender":0,"id":935563,"job":"Director","name":"Tosca
+        Musk","profile_path":"/usR5NspRlWgXKUe9qVsCtTCpe4l.jpg"},{"credit_id":"5f25dfc57c6de300361c794e","department":"Production","gender":0,"id":935563,"job":"Executive
+        Producer","name":"Tosca Musk","profile_path":"/usR5NspRlWgXKUe9qVsCtTCpe4l.jpg"},{"credit_id":"5f25e0212ac49900356637ce","department":"Art","gender":0,"id":1412043,"job":"Production
+        Design","name":"Traci Hays","profile_path":null},{"credit_id":"5f25dff2d940350035586c0e","department":"Editing","gender":0,"id":1572781,"job":"Editor","name":"Margie
+        Goodspeed","profile_path":null},{"credit_id":"5f25dfb47c6de300351c5dfa","department":"Production","gender":0,"id":1845009,"job":"Producer","name":"Michael
+        Buttiglieri","profile_path":null},{"credit_id":"5f275793869e750036680f1f","department":"Writing","gender":0,"id":2693030,"job":"Novel","name":"Sylvain
+        Reynard","profile_path":null}]}'
+  recorded_at: Wed, 14 Oct 2020 23:10:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/724089/reviews?api_key=<MOVIEDB_API_KEY>&language=en-US&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<MOVIEDB_API_KEY>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '69'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 14 Oct 2020 17:43:23 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - bd61a4888e86d94a0f9bc86c47d1b28e
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2020-09-25 04:10:03 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 d29afc70fc2fdadee440493854714224.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - Pd0MyOfS9vPHxUIdyRkcYMk8mPt6_44RUCAmoZs9aT9xI7fPPHszUQ==
+      Age:
+      - '19627'
+    body:
+      encoding: UTF-8
+      string: '{"id":724089,"page":1,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Wed, 14 Oct 2020 23:10:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/724089/similar?api_key=<MOVIEDB_API_KEY>&language=en-US&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<MOVIEDB_API_KEY>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 14 Oct 2020 17:43:23 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - c0f990316344a99366657d4c94d85baf
+      X-Memc-Age:
+      - '1631'
+      X-Memc-Expires:
+      - '19969'
+      Etag:
+      - W/"c2d71a3c8ca28ffcad83ab9b442e66ad"
+      Last-Modified:
+      - Wed, 14 Oct 2020 17:43:23 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 23241b9c368643949e3bb1a1ba4e97c3.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - NQi5v4HbtZ9ybsCpgBJXKEUBT9ArpG22ZI4aAYnc3H7fJMg_GgT12g==
+      Age:
+      - '19627'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwYWdlIjoxLCJyZXN1bHRzIjpbeyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvdXRickFFTTgxQWRuUm1KMHFvcU5pTW8xaVJ0LmpwZyIsImdlbnJlX2lkcyI6WzM3LDE4LDEyXSwiaWQiOjI4MTk1Nywib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiVGhlIFJldmVuYW50Iiwib3ZlcnZpZXciOiJJbiB0aGUgMTgyMHMsIGEgZnJvbnRpZXJzbWFuLCBIdWdoIEdsYXNzLCBzZXRzIG91dCBvbiBhIHBhdGggb2YgdmVuZ2VhbmNlIGFnYWluc3QgdGhvc2Ugd2hvIGxlZnQgaGltIGZvciBkZWFkIGFmdGVyIGEgYmVhciBtYXVsaW5nLiIsInBvc3Rlcl9wYXRoIjoiL2ppM2VjSnBoQVRsVmdXTlkwQjBSVlhaaXpkZi5qcGciLCJyZWxlYXNlX2RhdGUiOiIyMDE1LTEyLTI1IiwidGl0bGUiOiJUaGUgUmV2ZW5hbnQiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6Ny41LCJ2b3RlX2NvdW50IjoxMzY0OCwicG9wdWxhcml0eSI6MzQuMDJ9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiL2htMnN0d2tORkFhWE1FZWV0SlMyUlo3N3pDMS5qcGciLCJnZW5yZV9pZHMiOlsxMDc0OSwyN10sImlkIjo2MTE0LCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJEcmFjdWxhIiwib3ZlcnZpZXciOiJXaGVuIERyYWN1bGEgbGVhdmVzIHRoZSBjYXB0aXZlIEpvbmF0aGFuIEhhcmtlciBhbmQgVHJhbnN5bHZhbmlhIGZvciBMb25kb24gaW4gc2VhcmNoIG9mIE1pbmEgSGFya2VyLCB0aGUgcmVpbmNhcm5hdGlvbiBvZiBEcmFjdWxhJ3MgbG9uZy1kZWFkIHdpZmUgRWxpc2FiZXRhLCBvYnNlc3NlZCB2YW1waXJlIGh1bnRlciBEci4gVmFuIEhlbHNpbmcgc2V0cyBvdXQgdG8gZW5kIHRoZSBtYWRuZXNzLiIsInBvc3Rlcl9wYXRoIjoiL24zOWdsQzRHa0JlQ2J3ZGVuRVM4WkJvZGltOC5qcGciLCJyZWxlYXNlX2RhdGUiOiIxOTkyLTExLTEzIiwidGl0bGUiOiJEcmFjdWxhIiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjcuNCwidm90ZV9jb3VudCI6MzA5NiwicG9wdWxhcml0eSI6MzAuNDE3fSx7ImlkIjozMzE0ODIsInZpZGVvIjpmYWxzZSwidm90ZV9jb3VudCI6MjkzNSwidm90ZV9hdmVyYWdlIjo4LjAsInRpdGxlIjoiTGl0dGxlIFdvbWVuIiwicmVsZWFzZV9kYXRlIjoiMjAxOS0xMi0yNSIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IkxpdHRsZSBXb21lbiIsImdlbnJlX2lkcyI6WzE4LDEwNzQ5XSwiYmFja2Ryb3BfcGF0aCI6Ii9scXh4d1RSazBsN0N1Ylk2SmtKZGhud0pFa24uanBnIiwiYWR1bHQiOmZhbHNlLCJvdmVydmlldyI6IkZvdXIgc2lzdGVycyBjb21lIG9mIGFnZSBpbiBBbWVyaWNhIGluIHRoZSBhZnRlcm1hdGggb2YgdGhlIENpdmlsIFdhci4iLCJwb3N0ZXJfcGF0aCI6Ii95bjVpaE9EdFo3b2ZuOHBEWWZ4Q214aDhBWEkuanBnIiwicG9wdWxhcml0eSI6NTYuNDQyfSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii9hU0JKOHVEblFyT1dVQlc0VFY2ekNCc0NPeFEuanBnIiwiZ2VucmVfaWRzIjpbMTgsMTA3NDldLCJpZCI6NTA0NjA1LCJvcmlnaW5hbF9sYW5ndWFnZSI6ImZyIiwib3JpZ2luYWxfdGl0bGUiOiJEZXJuaWVyIGFtb3VyIiwib3ZlcnZpZXciOiJZZWFyIDE3NjMuIEZvcmNlZCBpbnRvIGV4aWxlLCB0aGUgZmFtb3VzIGxpYmVydGluZSBHaWFjb21vIENhc2Fub3ZhIGxlYXZlcyBQYXJpcyBhbmQgdHJhdmVscyB0byBMb25kb24sIHdoZXJlIGhlIG1lZXRzIE1hcmlhbm5lIGRlIENoYXJwaWxsb24sIGEgeW91bmcgcHJvc3RpdHV0ZSB0byB3aG9tIGhlIGlzIHNvIGF0dHJhY3RlZCB0aGF0IGhlIGZvcmdldHMgYWJvdXQgdGhlIG90aGVyIHdvbWVuLiIsInBvc3Rlcl9wYXRoIjoiLzNCYUZXQUFnZzc0Yjh2ZVp2bTh1RXY3cGNqSS5qcGciLCJyZWxlYXNlX2RhdGUiOiIyMDE5LTAzLTIwIiwidGl0bGUiOiJDYXNhbm92YSwgTGFzdCBMb3ZlIiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjQuOCwidm90ZV9jb3VudCI6MjEsInBvcHVsYXJpdHkiOjEyLjEwNn0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvOThxendUV241ZnJxSnFiZU9oNW9Nd1JTbG5XLmpwZyIsImdlbnJlX2lkcyI6WzUzLDM2XSwiaWQiOjQ5NDk3NCwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiUmVkIEpvYW4iLCJvdmVydmlldyI6IkxvbmRvbiwgRW5nbGFuZCwgTWF5IDIwMDAuIFRoZSBwZWFjZWZ1bCBsaWZlIG9mIGVsZGVybHkgSm9hbiBTdGFubGV5IGlzIHN1ZGRlbmx5IGRpc3J1cHRlZCB3aGVuIHNoZSBpcyBhcnJlc3RlZCBieSB0aGUgQnJpdGlzaCBJbnRlbGxpZ2VuY2UgU2VydmljZSBhbmQgYWNjdXNlZCBvZiBwcm92aWRpbmcgaW5mb3JtYXRpb24gdG8gY29tbXVuaXN0IFJ1c3NpYSBkdXJpbmcgdGhlIGZvcnRpZXMuIiwicG9zdGVyX3BhdGgiOiIvcFRaV21VV0oweUliNDlSYUl6UVVoNExyQmxxLmpwZyIsInJlbGVhc2VfZGF0ZSI6IjIwMTgtMDktMTMiLCJ0aXRsZSI6IlJlZCBKb2FuIiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjYuNywidm90ZV9jb3VudCI6MjA3LCJwb3B1bGFyaXR5IjoxNy4xOX0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvcUd5RDh2OXhNSmNSdzhqY1Z6anNjNFR1SHlVLmpwZyIsImdlbnJlX2lkcyI6WzgwLDI4LDUzXSwiaWQiOjU1ODQ2LCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJCbGl0eiIsIm92ZXJ2aWV3IjoiQSB0b3VnaCwgcmVuZWdhZGUgY29wIHdpdGggYSBnYXkgc2lkZWtpY2sgaXMgZGlzcGF0Y2hlZCB0byB0YWtlIGRvd24gYSBzZXJpYWwga2lsbGVyIHdobyBoYXMgYmVlbiB0YXJnZXRpbmcgcG9saWNlIG9mZmljZXJzLiIsInBvc3Rlcl9wYXRoIjoiL3FDUE1qVDhMZDh0dnMxenM3TFkyanBLbFJJSy5qcGciLCJyZWxlYXNlX2RhdGUiOiIyMDExLTA1LTIwIiwidGl0bGUiOiJCbGl0eiIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo2LjAsInZvdGVfY291bnQiOjk3NCwicG9wdWxhcml0eSI6MjguMjk1fSx7ImlkIjo0NzksInZpZGVvIjpmYWxzZSwidm90ZV9jb3VudCI6Nzg2LCJ2b3RlX2F2ZXJhZ2UiOjUuOSwidGl0bGUiOiJTaGFmdCIsInJlbGVhc2VfZGF0ZSI6IjIwMDAtMDYtMTUiLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJTaGFmdCIsImdlbnJlX2lkcyI6WzI4LDEyLDgwLDUzXSwiYmFja2Ryb3BfcGF0aCI6Ii9sR0RQWXVQS2dHV1RxTW5wTDg4RWlZb25PRzcuanBnIiwiYWR1bHQiOmZhbHNlLCJvdmVydmlldyI6Ik5ldyBZb3JrIHBvbGljZSBkZXRlY3RpdmUgSm9obiBTaGFmdCBhcnJlc3RzIFdhbHRlciBXYWRlIEpyLiBmb3IgYSByYWNpYWxseSBtb3RpdmF0ZWQgc2xheWluZy4gQnV0IHRoZSBvbmx5IGV5ZXdpdG5lc3MgZGlzYXBwZWFycywgYW5kIFdhZGUganVtcHMgYmFpbCBmb3IgU3dpdHplcmxhbmQuIFR3byB5ZWFycyBsYXRlciBXYWRlIHJldHVybnMgdG8gZmFjZSB0cmlhbCwgY29uZmlkZW50IGhpcyBtb25leSBhbmQgaW5mbHVlbmNlIHdpbGwgZ2V0IGhpbSBhY3F1aXR0ZWQgLS0gZXNwZWNpYWxseSBzaW5jZSBoZSdzIHBhaWQgYSBkcnVnIGtpbmdwaW4gdG8ga2lsbCB0aGUgd2l0bmVzcy4iLCJwb3N0ZXJfcGF0aCI6Ii91aVhLbER0YUR2cnJPTHkwWFVMY2ZjMTJmbHUuanBnIiwicG9wdWxhcml0eSI6MTYuMjY1fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii81anE3VGpSem12a0pzYThiRjN6V3F4YlB0bXcuanBnIiwiZ2VucmVfaWRzIjpbMThdLCJpZCI6Mzk5MDE5LCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJUaGUgQmVndWlsZWQiLCJvdmVydmlldyI6IkR1cmluZyB0aGUgQ2l2aWwgV2FyLCBhdCBhIFNvdXRoZXJuIGdpcmxz4oCZIGJvYXJkaW5nIHNjaG9vbCwgeW91bmcgd29tZW4gdGFrZSBpbiBhbiBpbmp1cmVkIGVuZW15IHNvbGRpZXIuIEFzIHRoZXkgcHJvdmlkZSByZWZ1Z2UgYW5kIHRlbmQgdG8gaGlzIHdvdW5kcywgdGhlIGhvdXNlIGlzIHRha2VuIG92ZXIgd2l0aCBzZXh1YWwgdGVuc2lvbiBhbmQgZGFuZ2Vyb3VzIHJpdmFscmllcywgYW5kIHRhYm9vcyBhcmUgYnJva2VuIGluIGFuIHVuZXhwZWN0ZWQgdHVybiBvZiBldmVudHMuIiwicG9zdGVyX3BhdGgiOiIvdVF4ZnFGQXFBdk5LNWIxd0QxMWIyeWNEQVZnLmpwZyIsInJlbGVhc2VfZGF0ZSI6IjIwMTctMDYtMjMiLCJ0aXRsZSI6IlRoZSBCZWd1aWxlZCIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo1LjgsInZvdGVfY291bnQiOjE1NzAsInBvcHVsYXJpdHkiOjE3Ljk1NH0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvM2ZDaGNpRjJHMXdYSHN5VGZKRDl5N3VONklsLmpwZyIsImdlbnJlX2lkcyI6WzI3LDE4LDE0XSwiaWQiOjYyOCwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiSW50ZXJ2aWV3IHdpdGggdGhlIFZhbXBpcmUiLCJvdmVydmlldyI6IkEgdmFtcGlyZSByZWxhdGVzIGhpcyBlcGljIGxpZmUgc3Rvcnkgb2YgbG92ZSwgYmV0cmF5YWwsIGxvbmVsaW5lc3MsIGFuZCBkYXJrIGh1bmdlciB0byBhbiBvdmVyLWN1cmlvdXMgcmVwb3J0ZXIuIiwicG9zdGVyX3BhdGgiOiIvdDdOVThJY21jTkJybHVuQ3hpeWNYOUpWN1JwLmpwZyIsInJlbGVhc2VfZGF0ZSI6IjE5OTQtMTEtMTEiLCJ0aXRsZSI6IkludGVydmlldyB3aXRoIHRoZSBWYW1waXJlIiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjcuMywidm90ZV9jb3VudCI6MzgxOCwicG9wdWxhcml0eSI6MzAuNDI1fSx7ImlkIjozOTkxMjEsInZpZGVvIjpmYWxzZSwidm90ZV9jb3VudCI6NzkyLCJ2b3RlX2F2ZXJhZ2UiOjcuMSwidGl0bGUiOiJBbiBPZmZpY2VyIGFuZCBhIFNweSIsInJlbGVhc2VfZGF0ZSI6IjIwMTktMDktMzAiLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImZyIiwib3JpZ2luYWxfdGl0bGUiOiJK4oCZYWNjdXNlIiwiZ2VucmVfaWRzIjpbMTgsMzYsNTNdLCJiYWNrZHJvcF9wYXRoIjoiL2pBcmwxajlzTDJtWWpSVzIzRWFaS1dBcjJFOC5qcGciLCJhZHVsdCI6ZmFsc2UsIm92ZXJ2aWV3IjoiSW4gMTg5NCwgRnJlbmNoIENhcHRhaW4gQWxmcmVkIERyZXlmdXMgaXMgd3JvbmdmdWxseSBjb252aWN0ZWQgb2YgdHJlYXNvbiBhbmQgc2VudGVuY2VkIHRvIGxpZmUgaW1wcmlzb25tZW50IGF0IERldmlsJ3MgSXNsYW5kLiIsInBvc3Rlcl9wYXRoIjoiLzkxMWtudFhDTTNXaUhZY1FESUo0d1paOUNKeC5qcGciLCJwb3B1bGFyaXR5IjoxOC4wMTd9LHsiaWQiOjMzNjg0MywidmlkZW8iOmZhbHNlLCJ2b3RlX2NvdW50Ijo1MTQ2LCJ2b3RlX2F2ZXJhZ2UiOjcuMSwidGl0bGUiOiJNYXplIFJ1bm5lcjogVGhlIERlYXRoIEN1cmUiLCJyZWxlYXNlX2RhdGUiOiIyMDE4LTAxLTEwIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiTWF6ZSBSdW5uZXI6IFRoZSBEZWF0aCBDdXJlIiwiZ2VucmVfaWRzIjpbMjgsODc4XSwiYmFja2Ryb3BfcGF0aCI6Ii9idmJ5aWRrTWFCbHMxTFRhSVdZWTZVbVlUYUwuanBnIiwiYWR1bHQiOmZhbHNlLCJvdmVydmlldyI6IlRob21hcyBsZWFkcyBoaXMgZ3JvdXAgb2YgZXNjYXBlZCBHbGFkZXJzIG9uIHRoZWlyIGZpbmFsIGFuZCBtb3N0IGRhbmdlcm91cyBtaXNzaW9uIHlldC4gVG8gc2F2ZSB0aGVpciBmcmllbmRzLCB0aGV5IG11c3QgYnJlYWsgaW50byB0aGUgbGVnZW5kYXJ5IExhc3QgQ2l0eSwgYSBXQ0tELWNvbnRyb2xsZWQgbGFieXJpbnRoIHRoYXQgbWF5IHR1cm4gb3V0IHRvIGJlIHRoZSBkZWFkbGllc3QgbWF6ZSBvZiBhbGwuIEFueW9uZSB3aG8gbWFrZXMgaXQgb3V0IGFsaXZlIHdpbGwgZ2V0IGFuc3dlcnMgdG8gdGhlIHF1ZXN0aW9ucyB0aGUgR2xhZGVycyBoYXZlIGJlZW4gYXNraW5nIHNpbmNlIHRoZXkgZmlyc3QgYXJyaXZlZCBpbiB0aGUgbWF6ZS4iLCJwb3N0ZXJfcGF0aCI6Ii8yellmekEzVEJ3ck1DOHRmRmJwaVRMT0RkZTAuanBnIiwicG9wdWxhcml0eSI6NjAuODg0fSx7ImlkIjo3NjksInZpZGVvIjpmYWxzZSwidm90ZV9jb3VudCI6ODAxMiwidm90ZV9hdmVyYWdlIjo4LjQsInRpdGxlIjoiR29vZEZlbGxhcyIsInJlbGVhc2VfZGF0ZSI6IjE5OTAtMDktMTIiLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJHb29kRmVsbGFzIiwiZ2VucmVfaWRzIjpbODAsMThdLCJiYWNrZHJvcF9wYXRoIjoiL2dJTHRlNlpkN20xWW5lSXI2TVZoaDMwUzlwci5qcGciLCJhZHVsdCI6ZmFsc2UsIm92ZXJ2aWV3IjoiVGhlIHRydWUgc3Rvcnkgb2YgSGVucnkgSGlsbCwgYSBoYWxmLUlyaXNoLCBoYWxmLVNpY2lsaWFuIEJyb29rbHluIGtpZCB3aG8gaXMgYWRvcHRlZCBieSBuZWlnaGJvdXJob29kIGdhbmdzdGVycyBhdCBhbiBlYXJseSBhZ2UgYW5kIGNsaW1icyB0aGUgcmFua3Mgb2YgYSBNYWZpYSBmYW1pbHkgdW5kZXIgdGhlIGd1aWRhbmNlIG9mIEppbW15IENvbndheS4iLCJwb3N0ZXJfcGF0aCI6Ii8xTVdzTzNRUWQ2dkI3RU5NZVhPR2lsN2kwQWwuanBnIiwicG9wdWxhcml0eSI6MjIuNjM1fSx7ImlkIjoxMDEyOTksInZpZGVvIjpmYWxzZSwidm90ZV9jb3VudCI6MTMxNzQsInZvdGVfYXZlcmFnZSI6Ny40LCJ0aXRsZSI6IlRoZSBIdW5nZXIgR2FtZXM6IENhdGNoaW5nIEZpcmUiLCJyZWxlYXNlX2RhdGUiOiIyMDEzLTExLTE1Iiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiVGhlIEh1bmdlciBHYW1lczogQ2F0Y2hpbmcgRmlyZSIsImdlbnJlX2lkcyI6WzI4LDEyLDg3OF0sImJhY2tkcm9wX3BhdGgiOiIvYUJnZVpvWWRycU5aNThNeThvVkR5UW9pMFBxLmpwZyIsImFkdWx0IjpmYWxzZSwib3ZlcnZpZXciOiJLYXRuaXNzIEV2ZXJkZWVuIGhhcyByZXR1cm5lZCBob21lIHNhZmUgYWZ0ZXIgd2lubmluZyB0aGUgNzR0aCBBbm51YWwgSHVuZ2VyIEdhbWVzIGFsb25nIHdpdGggZmVsbG93IHRyaWJ1dGUgUGVldGEgTWVsbGFyay4gV2lubmluZyBtZWFucyB0aGF0IHRoZXkgbXVzdCB0dXJuIGFyb3VuZCBhbmQgbGVhdmUgdGhlaXIgZmFtaWx5IGFuZCBjbG9zZSBmcmllbmRzLCBlbWJhcmtpbmcgb24gYSBcIlZpY3RvcidzIFRvdXJcIiBvZiB0aGUgZGlzdHJpY3RzLiBBbG9uZyB0aGUgd2F5IEthdG5pc3Mgc2Vuc2VzIHRoYXQgYSByZWJlbGxpb24gaXMgc2ltbWVyaW5nLCBidXQgdGhlIENhcGl0b2wgaXMgc3RpbGwgdmVyeSBtdWNoIGluIGNvbnRyb2wgYXMgUHJlc2lkZW50IFNub3cgcHJlcGFyZXMgdGhlIDc1dGggQW5udWFsIEh1bmdlciBHYW1lcyAoVGhlIFF1YXJ0ZXIgUXVlbGwpIC0gYSBjb21wZXRpdGlvbiB0aGF0IGNvdWxkIGNoYW5nZSBQYW5lbSBmb3JldmVyLiIsInBvc3Rlcl9wYXRoIjoiLzdjMUp0cmFZc2pNTW5rOE1kMElNb3lSenFaSi5qcGciLCJwb3B1bGFyaXR5IjozNC40NzJ9LHsiaWQiOjEzMzgwNSwidmlkZW8iOmZhbHNlLCJ2b3RlX2NvdW50IjozMzAzLCJ2b3RlX2F2ZXJhZ2UiOjYuMCwidGl0bGUiOiJDYXJyaWUiLCJyZWxlYXNlX2RhdGUiOiIyMDEzLTEwLTE2Iiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiQ2FycmllIiwiZ2VucmVfaWRzIjpbMTgsMjddLCJiYWNrZHJvcF9wYXRoIjoiL2Z4VjBvNGJlVkVrOHJpY29XNTM5d0xudVVRcS5qcGciLCJhZHVsdCI6ZmFsc2UsIm92ZXJ2aWV3IjoiQSByZWltYWdpbmluZyBvZiB0aGUgY2xhc3NpYyBob3Jyb3IgdGFsZSBhYm91dCBDYXJyaWUgV2hpdGUsIGEgc2h5IGdpcmwgb3V0Y2FzdCBieSBoZXIgcGVlcnMgYW5kIHNoZWx0ZXJlZCBieSBoZXIgZGVlcGx5IHJlbGlnaW91cyBtb3RoZXIsIHdobyB1bmxlYXNoZXMgdGVsZWtpbmV0aWMgdGVycm9yIG9uIGhlciBzbWFsbCB0b3duIGFmdGVyIGJlaW5nIHB1c2hlZCB0b28gZmFyIGF0IGhlciBzZW5pb3IgcHJvbS4iLCJwb3N0ZXJfcGF0aCI6Ii9rbG9Yejlxd08yM3o5S2J0M3ozTWduakY0eE8uanBnIiwicG9wdWxhcml0eSI6MzIuMzk1fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii8ySjI4M1lOeEtoeEFxSGVWZWdVSjVtekxmR2IuanBnIiwiZ2VucmVfaWRzIjpbODAsMTgsOTY0OF0sImlkIjozOTIwNDQsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6Ik11cmRlciBvbiB0aGUgT3JpZW50IEV4cHJlc3MiLCJvdmVydmlldyI6Ikdlbml1cyBCZWxnaWFuIGRldGVjdGl2ZSBIZXJjdWxlIFBvaXJvdCBpbnZlc3RpZ2F0ZXMgdGhlIG11cmRlciBvZiBhbiBBbWVyaWNhbiB0eWNvb24gYWJvYXJkIHRoZSBPcmllbnQgRXhwcmVzcyB0cmFpbi4iLCJwb3N0ZXJfcGF0aCI6Ii9rYzJnSmplYmNlb0ZnT1FidWt6UHpQOFNYVlouanBnIiwicmVsZWFzZV9kYXRlIjoiMjAxNy0xMS0wMyIsInRpdGxlIjoiTXVyZGVyIG9uIHRoZSBPcmllbnQgRXhwcmVzcyIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo2LjcsInZvdGVfY291bnQiOjY5OTcsInBvcHVsYXJpdHkiOjE5Ljc5fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii84SHdBVGtVVllnYU9uQVY3NXVvZGdSYlJ4TVEuanBnIiwiZ2VucmVfaWRzIjpbMTA3NDksODAsMThdLCJpZCI6MTEwMjcsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IlRoZSBQb3N0bWFuIEFsd2F5cyBSaW5ncyBUd2ljZSIsIm92ZXJ2aWV3IjoiVGhpcyByZW1ha2Ugb2YgdGhlIDE5NDYgbW92aWUgb2YgdGhlIHNhbWUgbmFtZSBhY2NvdW50cyBhbiBhZmZhaXIgYmV0d2VlbiBhIHNlZWR5IGRyaWZ0ZXIgYW5kIGEgc2VkdWN0aXZlIHdpZmUgb2YgYSByb2Fkc2lkZSBjYWZlIG93bmVyLiBUaGlzIGJlZ2lucyBhIGNoYWluIG9mIGV2ZW50cyB0aGF0IGN1bG1pbmF0ZXMgaW4gbXVyZGVyLiIsInBvc3Rlcl9wYXRoIjoiL2s1MnBQZ1ZPSFB3akl5TWR2TlpaaTNaN3pGUi5qcGciLCJyZWxlYXNlX2RhdGUiOiIxOTgxLTAzLTIwIiwidGl0bGUiOiJUaGUgUG9zdG1hbiBBbHdheXMgUmluZ3MgVHdpY2UiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6Ni41LCJ2b3RlX2NvdW50IjoyODMsInBvcHVsYXJpdHkiOjguNzM2fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii90cjRLMjEyamF4UUZCN0dDRVJPaHJNS3NBVS5qcGciLCJnZW5yZV9pZHMiOlsxOCwxMDc0OV0sImlkIjo5MDM2OSwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiTm93IElzIEdvb2QiLCJvdmVydmlldyI6IkEgZ2lybCBkeWluZyBvZiBsZXVrZW1pYSBjb21waWxlcyBhIGxpc3Qgb2YgdGhpbmdzIHNoZSdkIGxpa2UgdG8gZG8gYmVmb3JlIHBhc3NpbmcgYXdheS4gVG9wcGluZyB0aGUgbGlzdCBpcyBoZXIgZGVzaXJlIHRvIGxvc2UgaGVyIHZpcmdpbml0eS4iLCJwb3N0ZXJfcGF0aCI6Ii9vT0JIRjZxV3RNa3p3cG5yTERUS0pQQWIzekguanBnIiwicmVsZWFzZV9kYXRlIjoiMjAxMi0wNS0yNSIsInRpdGxlIjoiTm93IElzIEdvb2QiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6Ny40LCJ2b3RlX2NvdW50Ijo4NzYsInBvcHVsYXJpdHkiOjE0LjQyMX0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvd2RPR0EwTEMxTmlXZ0FYMU9haUt0TkEyNDdpLmpwZyIsImdlbnJlX2lkcyI6WzEwNzQ5LDE4XSwiaWQiOjQzOTQ5LCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJGbGlwcGVkIiwib3ZlcnZpZXciOiJXaGVuIEp1bGkgbWVldHMgQnJ5Y2UgaW4gdGhlIHNlY29uZCBncmFkZSwgc2hlIGtub3dzIGl0J3MgdHJ1ZSBsb3ZlLiBBZnRlciBzcGVuZGluZyBzaXggeWVhcnMgdHJ5aW5nIHRvIGNvbnZpbmNlIEJyeWNlIHRoZSBzYW1lLCBzaGUncyByZWFkeSB0byBnaXZlIHVwIC0gdW50aWwgaGUgc3RhcnRzIHRvIHJlY29uc2lkZXIuIiwicG9zdGVyX3BhdGgiOiIvOENmWE51M1U5SW8xRkE2UXg5dEM5Q3hWRVBXLmpwZyIsInJlbGVhc2VfZGF0ZSI6IjIwMTAtMDgtMDYiLCJ0aXRsZSI6IkZsaXBwZWQiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6Ny43LCJ2b3RlX2NvdW50IjoxNDMyLCJwb3B1bGFyaXR5IjoyMy41MDV9LHsiaWQiOjQ1NDk4MywidmlkZW8iOmZhbHNlLCJ2b3RlX2NvdW50Ijo1NDc1LCJ2b3RlX2F2ZXJhZ2UiOjcuMywidGl0bGUiOiJUaGUgS2lzc2luZyBCb290aCIsInJlbGVhc2VfZGF0ZSI6IjIwMTgtMDUtMTEiLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJUaGUgS2lzc2luZyBCb290aCIsImdlbnJlX2lkcyI6WzM1LDEwNzQ5XSwiYmFja2Ryb3BfcGF0aCI6Ii9pdGl6Mk9CSzRuczZYVDB1Zlh0dXNvam1NdDkuanBnIiwiYWR1bHQiOmZhbHNlLCJvdmVydmlldyI6IldoZW4gdGVlbmFnZXIgRWxsZSdzIGZpcnN0IGtpc3MgbGVhZHMgdG8gYSBmb3JiaWRkZW4gcm9tYW5jZSB3aXRoIHRoZSBob3R0ZXN0IGJveSBpbiBoaWdoIHNjaG9vbCwgc2hlIHJpc2tzIGhlciByZWxhdGlvbnNoaXAgd2l0aCBoZXIgYmVzdCBmcmllbmQuIiwicG9zdGVyX3BhdGgiOiIvN0RrdGsyU1Q2YUw4aDlPZTVycGs5MDNWTGh4LmpwZyIsInBvcHVsYXJpdHkiOjU3LjI1NH0seyJpZCI6NDY2MjgyLCJ2aWRlbyI6ZmFsc2UsInZvdGVfY291bnQiOjY1NDQsInZvdGVfYXZlcmFnZSI6Ny44LCJ0aXRsZSI6IlRvIEFsbCB0aGUgQm95cyBJJ3ZlIExvdmVkIEJlZm9yZSIsInJlbGVhc2VfZGF0ZSI6IjIwMTgtMDgtMTYiLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJUbyBBbGwgdGhlIEJveXMgSSd2ZSBMb3ZlZCBCZWZvcmUiLCJnZW5yZV9pZHMiOlszNSwxMDc0OV0sImJhY2tkcm9wX3BhdGgiOiIvaEJIeEJPR1FCVE1YM2JEbXFLb0FnbmlaOWhFLmpwZyIsImFkdWx0IjpmYWxzZSwib3ZlcnZpZXciOiJMYXJhIEplYW4ncyBsb3ZlIGxpZmUgZ29lcyBmcm9tIGltYWdpbmFyeSB0byBvdXQgb2YgY29udHJvbCB3aGVuIGhlciBzZWNyZXQgbGV0dGVycyB0byBldmVyeSBib3kgc2hlJ3MgZXZlciBmYWxsZW4gZm9yIGFyZSBteXN0ZXJpb3VzbHkgbWFpbGVkIG91dC4iLCJwb3N0ZXJfcGF0aCI6Ii9oS0haaFViSXlVQWpjU3JxSlRoRkdZSVI2a0kuanBnIiwicG9wdWxhcml0eSI6NDQuNDExfV0sInRvdGFsX3BhZ2VzIjo1MDcsInRvdGFsX3Jlc3VsdHMiOjEwMTI0fQ==
+  recorded_at: Wed, 14 Oct 2020 23:10:30 GMT
+- request:
+    method: get
+    uri: https://api.nytimes.com/svc/movies/v2/reviews/search.json?api-key=<NYT_MOVIE_REVIEWS_API_KEY>&query=gabriel_s_inferno_part_ii
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<NYT_MOVIE_REVIEWS_API_KEY>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Oct 2020 23:10:32 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=600
+      Expires:
+      - Wed, 14 Oct 2020 23:20:31 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-pao17440-PAO
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1602717031.151066,VS0,VE457
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Content-Type, X-Forwarded-For, X-Prototype-Version, X-Requested-With
+      Access-Control-Expose-Headers:
+      - Content-Length, X-JSON
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","copyright":"Copyright (c) 2020 The New York Times Company.
+        All Rights Reserved.","has_more":false,"num_results":0,"results":[]}'
+  recorded_at: Wed, 14 Oct 2020 23:10:32 GMT
+recorded_with: VCR 6.0.0

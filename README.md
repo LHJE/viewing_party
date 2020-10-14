@@ -70,7 +70,7 @@ And we added `nyan-cat-formatter` just for fun.
 ## Schema
 Below is our schema.
 
-[LETS PUT A DIAGRAM HERE]
+![our schema](/viewing_party_schema.png)
 
 
 ## Learning Goals

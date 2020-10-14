@@ -8,7 +8,7 @@ class PartiesController < ApplicationController
 
   def create
     party = current_user.parties.create({
-                                          movie_title: params[:movie_title],
+                                          movie_title: params[:movie_title].titleize,
                                           date: params[:party_date],
                                           time: params[:start_time]
                                         })

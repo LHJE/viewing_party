@@ -2,7 +2,7 @@ class Party < ApplicationRecord
   # alias_method :host, :user_id
   # belongs_to :host, class_name: 'User'
   belongs_to :user
-  has_many :party_users
+  has_many :party_users, dependent: :destroy
   has_many :users, through: :party_users
 
   validates :movie_title,

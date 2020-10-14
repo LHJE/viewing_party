@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/19265/reviews?api_key=<MOVIEDB_API_KEY>&language=en-US&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<MOVIEDB_API_KEY>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 14 Oct 2020 15:40:45 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 0b7e4237f062a1b2d25343f3c29952ab
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2020-07-21 13:39:24 +0000'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 7d885ba806a1846198f8b666005bec93.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - pNoJI__-2fcCE-FYs5oObaEXKl7LnK8_othh_6jG6ebHAVwwaxrTRQ==
+      Age:
+      - '20776'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":19265,"page":1,"results":[{"author":"markuspm","content":"It
+        is an instant classic. One of my favorite movies for the holiday season.","id":"52b7d4d2760ee330850373c7","url":"https://www.themoviedb.org/review/52b7d4d2760ee330850373c7"}],"total_pages":1,"total_results":1}'
+  recorded_at: Wed, 14 Oct 2020 21:27:01 GMT
+recorded_with: VCR 6.0.0

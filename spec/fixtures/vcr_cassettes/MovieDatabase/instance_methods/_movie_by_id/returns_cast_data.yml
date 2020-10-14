@@ -1,0 +1,257 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/19265/credits?api_key=<MOVIEDB_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<MOVIEDB_API_KEY>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 135c43205fc0868d6efb12198c474b5f
+      X-Memc-Age:
+      - '1992'
+      X-Memc-Expires:
+      - '19608'
+      Last-Modified:
+      - Tue, 13 Oct 2020 22:27:28 GMT
+      Date:
+      - Wed, 14 Oct 2020 15:40:45 GMT
+      Cache-Control:
+      - public, max-age=21600
+      Etag:
+      - W/"d9fe63e6564f76be22bbf2c52366f188"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 a44b9db7a2d103360945ab52619e5016.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - J8rrZB08kfOJGXLFCxRp75XyHtDyhuXTIQh9MSOJKwSCOid18VAyzA==
+      Age:
+      - '20220'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":19265,"cast":[{"cast_id":5,"character":"Boris Yellnikoff","credit_id":"52fe47ca9251416c750a596b","gender":2,"id":16376,"name":"Larry
+        David","order":0,"profile_path":"/iuqDxOO6DBGFJAmqCAITmYbGuEt.jpg"},{"cast_id":6,"character":"Melodie
+        St. Ann Celestine","credit_id":"52fe47ca9251416c750a596f","gender":1,"id":38940,"name":"Evan
+        Rachel Wood","order":1,"profile_path":"/dWmzryckjVXOVoIVa3in1Cg6v4r.jpg"},{"cast_id":8,"character":"Joe
+        - Boris'' Friend #3","credit_id":"52fe47ca9251416c750a5977","gender":2,"id":21731,"name":"Michael
+        McKean","order":2,"profile_path":"/xSwMjo3hLLVeopaHwYDdM1m5enl.jpg"},{"cast_id":12,"character":"Leo
+        Brockman","credit_id":"52fe47ca9251416c750a5987","gender":2,"id":84423,"name":"Conleth
+        Hill","order":3,"profile_path":"/eeTnNiustUbShHU09EQ6LoOpzcg.jpg"},{"cast_id":14,"character":"Marietta","credit_id":"52fe47ca9251416c750a598f","gender":1,"id":1276,"name":"Patricia
+        Clarkson","order":4,"profile_path":"/rHHM9G83fpBAcFathbSyV4Tot5j.jpg"},{"cast_id":17,"character":"John","credit_id":"52fe47cb9251416c750a599b","gender":2,"id":42157,"name":"Ed
+        Begley Jr.","order":5,"profile_path":"/mmGS9QQLlTfe3aT8WERMLsIBnZU.jpg"},{"cast_id":10,"character":"Jessica","credit_id":"52fe47ca9251416c750a597f","gender":1,"id":84422,"name":"Carolyn
+        McCormick","order":6,"profile_path":"/203YNdKZVySGvxeEcRA8dABBUyO.jpg"},{"cast_id":15,"character":"Randy
+        James","credit_id":"52fe47ca9251416c750a5993","gender":2,"id":73968,"name":"Henry
+        Cavill","order":7,"profile_path":"/hErUwonrQgY5Y7RfxOfv8Fq11MB.jpg"},{"cast_id":11,"character":"Perry","credit_id":"52fe47ca9251416c750a5983","gender":2,"id":17487,"name":"John
+        Gallagher Jr.","order":8,"profile_path":"/e4eEg5lH6Yk0OkpieUoUYdzl2Ui.jpg"},{"cast_id":18,"character":"Howard","credit_id":"52fe47cb9251416c750a599f","gender":2,"id":60021,"name":"Christopher
+        Evan Welch","order":9,"profile_path":"/midyg7Ni0QCHGgqaHyld7tpAzND.jpg"},{"cast_id":7,"character":"Boris''
+        Friend #1","credit_id":"52fe47ca9251416c750a5973","gender":2,"id":16328,"name":"Adam
+        Brooks","order":10,"profile_path":null},{"cast_id":9,"character":"Boris''
+        Friend #2","credit_id":"52fe47ca9251416c750a597b","gender":2,"id":84421,"name":"Lyle
+        Kanouse","order":11,"profile_path":null},{"cast_id":154,"character":"Boy on
+        Street","credit_id":"5ded81bb02576400185356d9","gender":0,"id":2478387,"name":"Clifford
+        Lee Dickson","order":12,"profile_path":null},{"cast_id":21,"character":"Boy''s
+        Mother","credit_id":"52fe47cb9251416c750a59ab","gender":1,"id":36549,"name":"Yolonda
+        Ross","order":13,"profile_path":null},{"cast_id":22,"character":"Chess Mother","credit_id":"52fe47cb9251416c750a59af","gender":1,"id":1218277,"name":"Samantha
+        Bee","order":14,"profile_path":"/5qaonOzWVYV85EjDRdQqd3gctcL.jpg"},{"cast_id":155,"character":"Lady
+        at Chinese Restaurant","credit_id":"5ded822d158c85001382b408","gender":1,"id":116691,"name":"Marcia
+        DeBonis","order":15,"profile_path":"/gxyBCVgE2l7iyMa2qQkEzjuI8mQ.jpg"},{"cast_id":23,"character":"Chess
+        Girl","credit_id":"52fe47cb9251416c750a59b3","gender":0,"id":1285414,"name":"Willa
+        Cuthrell-Tuttleman","order":16,"profile_path":null},{"cast_id":13,"character":"Perry''s
+        Friend","credit_id":"52fe47ca9251416c750a598b","gender":1,"id":84424,"name":"Nicole
+        Patrick","order":17,"profile_path":null},{"cast_id":16,"character":"Morgenstern","credit_id":"52fe47ca9251416c750a5997","gender":2,"id":53573,"name":"Olek
+        Krupa","order":18,"profile_path":"/jTVCCZCm16aZeUCXnoSd4EldfyN.jpg"},{"cast_id":19,"character":"Helena","credit_id":"52fe47cb9251416c750a59a3","gender":1,"id":14984,"name":"Jessica
+        Hecht","order":19,"profile_path":"/icLFpyGlarQNUuwRvcY6xwSXT0p.jpg"},{"cast_id":156,"character":"Television
+        Voice (voice)","credit_id":"5ded8313158c85001382b630","gender":1,"id":1254627,"name":"Lindsay
+        Michelle Nader","order":20,"profile_path":null},{"cast_id":157,"character":"Television
+        Voice (voice)","credit_id":"5ded83260257640018535bd0","gender":2,"id":19851,"name":"Armand
+        Schultz","order":21,"profile_path":"/jppTkGkLEGGIaLO830zqGiuQG4q.jpg"},{"cast_id":20,"character":"Melodie
+        Club Friend #3 (uncredited)","credit_id":"52fe47cb9251416c750a59a7","gender":0,"id":79999,"name":"Kristen
+        Ruhlin","order":22,"profile_path":"/sRTXVriVg2SUVLALhKekWXD0PQi.jpg"},{"cast_id":24,"character":"Cafe
+        Waitress (uncredited)","credit_id":"52fe47cb9251416c750a59b7","gender":0,"id":1285539,"name":"Julie
+        Basem","order":23,"profile_path":null}],"crew":[{"credit_id":"5ded50bb32489b0012c1f83e","department":"Production","gender":1,"id":1046,"job":"Casting","name":"Juliet
+        Taylor","profile_path":null},{"credit_id":"52fe47ca9251416c750a5955","department":"Directing","gender":2,"id":1243,"job":"Director","name":"Woody
+        Allen","profile_path":"/wcPQgZLDibuej1RwNTy1R2U2ZJw.jpg"},{"credit_id":"52fe47ca9251416c750a595b","department":"Writing","gender":2,"id":1243,"job":"Writer","name":"Woody
+        Allen","profile_path":"/wcPQgZLDibuej1RwNTy1R2U2ZJw.jpg"},{"credit_id":"5ded5122158c850015825887","department":"Editing","gender":1,"id":1252,"job":"Editor","name":"Alisa
+        Lepselter","profile_path":"/wUW40ytbhpiQj8LHpf95ePOzGyg.jpg"},{"credit_id":"52fe47ca9251416c750a5961","department":"Production","gender":1,"id":1265,"job":"Producer","name":"Letty
+        Aronson","profile_path":null},{"credit_id":"52fe47ca9251416c750a5967","department":"Production","gender":2,"id":1268,"job":"Producer","name":"Stephen
+        Tenenbaum","profile_path":null},{"credit_id":"5ded74c5158c850015828e21","department":"Art","gender":2,"id":10576,"job":"Art
+        Direction","name":"Tom Warren","profile_path":null},{"credit_id":"5ded73310257640018533b9d","department":"Production","gender":1,"id":6990,"job":"Unit
+        Production Manager","name":"Helen Robin","profile_path":null},{"credit_id":"5ded51df158c850013825bde","department":"Production","gender":1,"id":6990,"job":"Co-Producer","name":"Helen
+        Robin","profile_path":null},{"credit_id":"5ded516d158c850013825a7c","department":"Production","gender":2,"id":6993,"job":"Co-Executive
+        Producer","name":"Charles H. Joffe","profile_path":null},{"credit_id":"5ded515edc86470013c39230","department":"Production","gender":2,"id":6994,"job":"Co-Executive
+        Producer","name":"Jack Rollins","profile_path":null},{"credit_id":"5ded51a0158c850018827df8","department":"Production","gender":2,"id":8570,"job":"Executive
+        Producer","name":"Vincent Maraval","profile_path":null},{"credit_id":"5dc0bdb2470ead0018896047","department":"Costume
+        & Make-Up","gender":1,"id":8869,"job":"Costume Design","name":"Suzy Benzinger","profile_path":null},{"credit_id":"52fe47cb9251416c750a59bd","department":"Camera","gender":2,"id":10688,"job":"Director
+        of Photography","name":"Harris Savides","profile_path":null},{"credit_id":"5ded50c985da120017496bfe","department":"Production","gender":1,"id":15426,"job":"Casting","name":"Laura
+        Rosenthal","profile_path":null},{"credit_id":"5ded7b2e32489b0014c24672","department":"Sound","gender":2,"id":15432,"job":"Supervising
+        Sound Editor","name":"Robert Hein","profile_path":null},{"credit_id":"5ded7e3e158c85001382ad56","department":"Visual
+        Effects","gender":2,"id":15435,"job":"VFX Supervisor","name":"Randall Balsmeyer","profile_path":null},{"credit_id":"5ded50d40257640014530d78","department":"Production","gender":1,"id":17635,"job":"Casting","name":"Ali
+        Farrell","profile_path":null},{"credit_id":"57193e6792514167ad000132","department":"Art","gender":2,"id":23966,"job":"Production
+        Design","name":"Santo Loquasto","profile_path":null},{"credit_id":"5ded8362158c850015829d32","department":"Crew","gender":2,"id":34540,"job":"Stunt
+        Coordinator","name":"Peter Bucossi","profile_path":null},{"credit_id":"5ded51b0daf57c0013ec5cbf","department":"Production","gender":2,"id":56787,"job":"Executive
+        Producer","name":"Brahim Chioua","profile_path":null},{"credit_id":"5ded74e1158c850015828e32","department":"Art","gender":1,"id":60135,"job":"Set
+        Decoration","name":"Ellen Christiansen","profile_path":null},{"credit_id":"5ded7a88daf57c0015ec8950","department":"Sound","gender":2,"id":92377,"job":"Sound
+        Re-Recording Mixer","name":"Lee Dichter","profile_path":null},{"credit_id":"5ded7b95158c85001382a79a","department":"Sound","gender":2,"id":92388,"job":"Foley
+        Artist","name":"Jay Peck","profile_path":null},{"credit_id":"5ded7641dc86470013c3cb98","department":"Camera","gender":2,"id":91115,"job":"Camera
+        Operator","name":"Kyle Rudolph","profile_path":null},{"credit_id":"5ded7d1f158c8500158294d5","department":"Production","gender":0,"id":91124,"job":"Extras
+        Casting","name":"Karen E. Etcoff","profile_path":null},{"credit_id":"5ded7f0fdaf57c0013ecadb4","department":"Editing","gender":0,"id":1049271,"job":"Colorist","name":"Tim
+        Stipan","profile_path":null},{"credit_id":"5ded7dca0257640016535ba3","department":"Production","gender":0,"id":1237083,"job":"Other","name":"Laura
+        Streicher","profile_path":null},{"credit_id":"5ded79b185da12001a499469","department":"Costume
+        & Make-Up","gender":0,"id":1329530,"job":"Costume Supervisor","name":"Danajean
+        Cicerchi","profile_path":null},{"credit_id":"5ded77fa158c85001882a916","department":"Art","gender":0,"id":1335119,"job":"Construction
+        Coordinator","name":"Richard Tenewitz","profile_path":null},{"credit_id":"5ded7b88daf57c0013eca384","department":"Sound","gender":2,"id":1337462,"job":"Foley
+        Recording Engineer","name":"Ryan Collison","profile_path":"/n8CEnq1gs9qbvwJIRkwKQM4tsDS.jpg"},{"credit_id":"5ded73eb32489b0014c23e2c","department":"Directing","gender":1,"id":1347761,"job":"Script
+        Supervisor","name":"Jessica Lichtner","profile_path":null},{"credit_id":"5ded756b158c850013829c0d","department":"Art","gender":1,"id":1395360,"job":"Property
+        Master","name":"Ann Miller","profile_path":null},{"credit_id":"5ded7b4e158c85001382a723","department":"Sound","gender":2,"id":1399970,"job":"Sound
+        Effects Editor","name":"Glenfield Payne","profile_path":null},{"credit_id":"5ded759132489b0014c24104","department":"Art","gender":0,"id":1405810,"job":"Assistant
+        Property Master","name":"Elizabeth Schlitten","profile_path":null},{"credit_id":"5ab266e992514139f7008ba8","department":"Sound","gender":2,"id":1407730,"job":"Sound
+        Editor","name":"David Wahnon","profile_path":null},{"credit_id":"5ded74d1158c850015828e2e","department":"Art","gender":0,"id":1468026,"job":"Assistant
+        Art Director","name":"Beth Kuhn","profile_path":null},{"credit_id":"5ded7650dc86470011c3dfa7","department":"Camera","gender":0,"id":1512743,"job":"First
+        Assistant Camera","name":"Tim Norman","profile_path":null},{"credit_id":"5ded7cec85da12001a49980e","department":"Production","gender":0,"id":1516456,"job":"Casting
+        Associate","name":"Maribeth Fox","profile_path":null},{"credit_id":"5ded74f4158c850015828e3e","department":"Art","gender":0,"id":1522361,"job":"Assistant
+        Set Decoration","name":"Jennifer B. Starke","profile_path":null},{"credit_id":"5ded7b3edaf57c0013eca2e5","department":"Sound","gender":1,"id":1531576,"job":"Dialogue
+        Editor","name":"Sylvia Menno","profile_path":null},{"credit_id":"5ded7a2985da12001449b1a1","department":"Costume
+        & Make-Up","gender":0,"id":1533095,"job":"Key Hair Stylist","name":"Robert
+        Fama","profile_path":null},{"credit_id":"5ded7a57dc86470011c3ebfa","department":"Sound","gender":2,"id":1535541,"job":"Production
+        Sound Mixer","name":"Gary Alper","profile_path":null},{"credit_id":"5ded7e760257640014535aef","department":"Visual
+        Effects","gender":0,"id":1537443,"job":"Compositing Supervisor","name":"J.
+        John Corbett","profile_path":null},{"credit_id":"5ded7fe6dc86470011c3f791","department":"Editing","gender":0,"id":1545160,"job":"Digital
+        Intermediate Producer","name":"Dana Bloder","profile_path":null},{"credit_id":"5ded7ba30257640018534bef","department":"Sound","gender":0,"id":1550842,"job":"Dolby
+        Consultant","name":"Thomas Kodros","profile_path":null},{"credit_id":"5b2a8075925141391800659f","department":"Editing","gender":1,"id":1551181,"job":"First
+        Assistant Editor","name":"Morgan Neville","profile_path":"/9r0hdHBrBAW7iNfeLlIwRbyTVrw.jpg"},{"credit_id":"5ded738adc86470011c3dc59","department":"Production","gender":2,"id":1551185,"job":"Production
+        Coordinator","name":"Scott Kordish","profile_path":null},{"credit_id":"5ded7e5f32489b0016c2a2bd","department":"Visual
+        Effects","gender":0,"id":1551947,"job":"Visual Effects Producer","name":"Adrienne
+        Winterhalter","profile_path":null},{"credit_id":"5ded7f8b32489b0016c2a5ff","department":"Editing","gender":0,"id":1552873,"job":"Color
+        Timer","name":"Terry Claborn","profile_path":null},{"credit_id":"5ded7df7dc86470011c3f391","department":"Crew","gender":0,"id":1555324,"job":"Set
+        Production Assistant","name":"James Lesage","profile_path":null},{"credit_id":"5ded767ddc86470011c3e0d5","department":"Camera","gender":0,"id":1555714,"job":"Still
+        Photographer","name":"Jessica Miglio","profile_path":null},{"credit_id":"5ded7536daf57c0015ec83f7","department":"Art","gender":0,"id":1561298,"job":"Art
+        Department Coordinator","name":"Glenn Lloyd","profile_path":null},{"credit_id":"5ded734532489b0012c2307c","department":"Directing","gender":2,"id":1561591,"job":"First
+        Assistant Director","name":"Richard Patrick","profile_path":null},{"credit_id":"5ded7c1ddc86470013c3d34a","department":"Crew","gender":2,"id":1648074,"job":"Transportation
+        Captain","name":"Gene O''Neill","profile_path":null},{"credit_id":"5ded83ec85da12001a49a54c","department":"Crew","gender":2,"id":1648110,"job":"Thanks","name":"Antoine
+        Douaihy","profile_path":null},{"credit_id":"5ded7a08daf57c0013eca0fb","department":"Costume
+        & Make-Up","gender":1,"id":1661564,"job":"Key Makeup Artist","name":"Rosemary
+        Zurlo","profile_path":null},{"credit_id":"5ded7523daf57c0015ec83d8","department":"Art","gender":2,"id":1661573,"job":"Leadman","name":"Daniel
+        K. Grosso","profile_path":null},{"credit_id":"5ded8467daf57c0013ecb836","department":"Crew","gender":2,"id":1661578,"job":"Thanks","name":"Greg
+        Johnson","profile_path":null},{"credit_id":"5ded800d0257640016535d06","department":"Editing","gender":2,"id":1733132,"job":"Negative
+        Cutter","name":"Mo Henry","profile_path":null},{"credit_id":"5ded7e8832489b0016c2a30f","department":"Visual
+        Effects","gender":0,"id":1739335,"job":"Digital Compositor","name":"David
+        Piombino","profile_path":null},{"credit_id":"5ded744985da12001a498bb2","department":"Production","gender":1,"id":1761754,"job":"Assistant
+        Location Manager","name":"Lynn H. Powers","profile_path":null},{"credit_id":"5ded7c490257640018534d94","department":"Crew","gender":2,"id":1765907,"job":"Transportation
+        Co-Captain","name":"John Canavan","profile_path":null},{"credit_id":"5ded7477daf57c0015ec81c6","department":"Production","gender":0,"id":1782427,"job":"Assistant
+        Location Manager","name":"John Spady","profile_path":null},{"credit_id":"5ded795132489b0016c29450","department":"Costume
+        & Make-Up","gender":0,"id":1790104,"job":"Assistant Costume Designer","name":"Patrick
+        Wiley","profile_path":null},{"credit_id":"5ded757b32489b0014c240ed","department":"Art","gender":1,"id":1915302,"job":"Assistant
+        Property Master","name":"Kathleen Dolan","profile_path":null},{"credit_id":"5ded74aedc86470011c3dd7f","department":"Art","gender":1,"id":1999596,"job":"Location
+        Scout","name":"Gine Lui","profile_path":null},{"credit_id":"5ded7e14daf57c0019ec961c","department":"Crew","gender":0,"id":2029422,"job":"Set
+        Production Assistant","name":"Brian Papworth","profile_path":null},{"credit_id":"5ded7a7685da12001a49955b","department":"Crew","gender":0,"id":2136733,"job":"Cableman","name":"Jason
+        Stasium","profile_path":null},{"credit_id":"5ded7fb9158c8500158297f9","department":"Editing","gender":0,"id":2147955,"job":"Digital
+        Intermediate","name":"Jesse Morrow","profile_path":null},{"credit_id":"5ded780d025764001453506b","department":"Art","gender":0,"id":2154156,"job":"Key
+        Carpenter","name":"Kenneth Brzozowski","profile_path":null},{"credit_id":"5ded7e22daf57c0015ec8dad","department":"Crew","gender":0,"id":2158137,"job":"Set
+        Production Assistant","name":"Lora Sorrentino","profile_path":null},{"credit_id":"5ded7c89daf57c0013eca944","department":"Production","gender":0,"id":2158155,"job":"Location
+        Assistant","name":"Joshua Shull","profile_path":null},{"credit_id":"5ded8375158c850015829d46","department":"Crew","gender":2,"id":2192617,"job":"Stunt
+        Double","name":"Don Hewitt Sr.","profile_path":"/bJ30E8NKVCWq5vToA9e6Adt4RI.jpg"},{"credit_id":"5ded7660dc86470019c3cc37","department":"Camera","gender":0,"id":2215368,"job":"Second
+        Assistant Camera","name":"Matt Balzarini","profile_path":null},{"credit_id":"5ded73db158c850015828cc2","department":"Production","gender":0,"id":2233378,"job":"Assistant
+        Production Coordinator","name":"Amy R. Trachtman","profile_path":null},{"credit_id":"5ded735532489b0012c2310a","department":"Directing","gender":0,"id":2248584,"job":"Second
+        Assistant Director","name":"Murphy Occhino","profile_path":null},{"credit_id":"5ded748632489b0014c23fd9","department":"Art","gender":0,"id":2253149,"job":"Location
+        Scout","name":"Susan Silas","profile_path":null},{"credit_id":"5ded7af3daf57c0013eca27b","department":"Crew","gender":0,"id":2268156,"job":"Projection","name":"Adrianne
+        Jorge","profile_path":null},{"credit_id":"5ded743332489b0016c28e98","department":"Production","gender":1,"id":2360296,"job":"Location
+        Manager","name":"Christie Mullen","profile_path":null},{"credit_id":"5ded79c7158c85001882acaf","department":"Costume
+        & Make-Up","gender":0,"id":2360395,"job":"Costume Assistant","name":"Marco
+        Piemontese","profile_path":null},{"credit_id":"5ded741e85da12001a498b25","department":"Directing","gender":0,"id":2460460,"job":"Other","name":"Melissa
+        Tomjanovich","profile_path":null},{"credit_id":"5ded73a40257640018533c78","department":"Production","gender":0,"id":2478261,"job":"Production
+        Accountant","name":"Pietro Lorino, Jr.","profile_path":null},{"credit_id":"5ded73c932489b0012c2318e","department":"Production","gender":0,"id":2478263,"job":"Production
+        Accountant","name":"Abby Bailey","profile_path":null},{"credit_id":"5ded7462158c85001882a5c4","department":"Production","gender":0,"id":2478269,"job":"Assistant
+        Location Manager","name":"Elizabeth Klenk","profile_path":null},{"credit_id":"5ded749e158c850015828e13","department":"Art","gender":0,"id":2478272,"job":"Location
+        Scout","name":"Suk-Yi Mar","profile_path":null},{"credit_id":"5ded754b32489b0016c28f93","department":"Art","gender":0,"id":2478275,"job":"Art
+        Department Assistant","name":"James Granger","profile_path":null},{"credit_id":"5ded75a3158c850013829c46","department":"Crew","gender":0,"id":2478276,"job":"Key
+        Scenic Artist","name":"Jon Ringbom","profile_path":null},{"credit_id":"5ded75b2158c850013829c58","department":"Crew","gender":0,"id":2478277,"job":"Scenic
+        Artist","name":"Virginia Gifford","profile_path":null},{"credit_id":"5ded75bddaf57c0015ec851c","department":"Crew","gender":0,"id":2478278,"job":"Scenic
+        Artist","name":"Tom Nousias","profile_path":null},{"credit_id":"5ded75d585da12001749b524","department":"Crew","gender":0,"id":2478279,"job":"Scenic
+        Artist","name":"Cliff Schorr","profile_path":null},{"credit_id":"5ded75f0dc86470019c3cbea","department":"Production","gender":0,"id":2478280,"job":"Art
+        Department Production Assistant","name":"Eric Goodwin","profile_path":null},{"credit_id":"5ded766f85da12001749b5a1","department":"Camera","gender":0,"id":2478283,"job":"Camera
+        Loader","name":"Adriana Brunatto","profile_path":null},{"credit_id":"5ded76dadc86470011c3e1bf","department":"Camera","gender":0,"id":2478284,"job":"Key
+        Grip","name":"James Finnerty, Jr.","profile_path":null},{"credit_id":"5ded76ff02576400185342b4","department":"Camera","gender":0,"id":2478285,"job":"Best
+        Boy Grip","name":"Chris Purificato","profile_path":null},{"credit_id":"5ded7714daf57c0019ec8bcf","department":"Camera","gender":0,"id":2478286,"job":"Dolly
+        Grip","name":"Richard C. Kerekes","profile_path":null},{"credit_id":"5ded772432489b0012c237a0","department":"Lighting","gender":0,"id":2478287,"job":"Key
+        Rigging Grip","name":"Joel Carucci","profile_path":null},{"credit_id":"5ded773a85da12001449b054","department":"Lighting","gender":0,"id":2478289,"job":"Rigging
+        Grip","name":"Greg Canicio","profile_path":null},{"credit_id":"5ded774f32489b0016c2914c","department":"Lighting","gender":0,"id":2478290,"job":"Gaffer","name":"Russ
+        Engels","profile_path":null},{"credit_id":"5ded775f0257640014534f2d","department":"Lighting","gender":0,"id":2478291,"job":"Best
+        Boy Electric","name":"Jim Mah","profile_path":null},{"credit_id":"5ded77a585da12001a49913e","department":"Art","gender":0,"id":2478292,"job":"Shop
+        Electric","name":"James Walsh, Sr.","profile_path":null},{"credit_id":"5ded77cfdc86470013c3cd38","department":"Lighting","gender":0,"id":2478294,"job":"Electrician","name":"Douglas
+        Dalisera","profile_path":null},{"credit_id":"5ded77e3daf57c0015ec871f","department":"Lighting","gender":0,"id":2478295,"job":"Best
+        Boy Electric","name":"Kevin Walsh","profile_path":null},{"credit_id":"5ded783a85da12001749bcb3","department":"Art","gender":0,"id":2478302,"job":"Standby
+        Carpenter","name":"Joseph Ziegler","profile_path":null},{"credit_id":"5ded785c158c85001882a99a","department":"Art","gender":0,"id":2478304,"job":"Key
+        Construction Grip","name":"Nicholas J. Mongelli, Jr.","profile_path":null},{"credit_id":"5ded78940257640016535927","department":"Art","gender":0,"id":2478307,"job":"Other","name":"Joshua
+        Book","profile_path":null},{"credit_id":"5ded796adc86470013c3cf56","department":"Costume
+        & Make-Up","gender":0,"id":2478315,"job":"Costume Supervisor","name":"Scott
+        Westervelt","profile_path":null},{"credit_id":"5ded79d4daf57c0019ec9052","department":"Costume
+        & Make-Up","gender":0,"id":2478318,"job":"Costume Assistant","name":"Jeff
+        Fender","profile_path":null},{"credit_id":"5ded79e9daf57c0019ec9060","department":"Costume
+        & Make-Up","gender":0,"id":2478319,"job":"Costume Assistant","name":"Nicholas
+        McManus","profile_path":null},{"credit_id":"5ded7a1b02576400145353c6","department":"Costume
+        & Make-Up","gender":0,"id":2478320,"job":"Makeup Artist","name":"Linda Melo-Danzo","profile_path":null},{"credit_id":"5ded7a38dc86470019c3d05b","department":"Costume
+        & Make-Up","gender":0,"id":2478321,"job":"Hairstylist","name":"Gail McGuire","profile_path":null},{"credit_id":"5ded7a66158c85001882ad6d","department":"Sound","gender":0,"id":2478322,"job":"Boom
+        Operator","name":"Pete Fonda","profile_path":null},{"credit_id":"5ded7ae0dc86470013c3d0ae","department":"Editing","gender":0,"id":2478323,"job":"Assistant
+        Editor","name":"Kate Rose Itzkowitz","profile_path":null},{"credit_id":"5ded7b0a158c85001382a6f7","department":"Editing","gender":0,"id":2478325,"job":"Dailies
+        Operator","name":"Brian Umana","profile_path":null},{"credit_id":"5ded7b6bdc86470011c3eea2","department":"Sound","gender":0,"id":2478326,"job":"Foley
+        Editor","name":"Matt Haasch","profile_path":null},{"credit_id":"5ded7c68158c85001382aa0f","department":"Crew","gender":0,"id":2478334,"job":"Transportation
+        Coordinator","name":"Leo Driver","profile_path":null},{"credit_id":"5ded7c7885da12001a4997cd","department":"Production","gender":0,"id":2478335,"job":"Location
+        Assistant","name":"Colby Shrefler","profile_path":null},{"credit_id":"5ded7c96158c85001882b064","department":"Production","gender":0,"id":2478338,"job":"Location
+        Assistant","name":"Nate Shull","profile_path":null},{"credit_id":"5ded7cd7daf57c0015ec8c3e","department":"Directing","gender":0,"id":2478339,"job":"Other","name":"Dan
+        Majkut","profile_path":null},{"credit_id":"5ded7d3a0257640016535b4e","department":"Production","gender":0,"id":2478342,"job":"Extras
+        Casting Assistant","name":"Bill Tripician","profile_path":null},{"credit_id":"5ded7d4edaf57c0019ec9515","department":"Production","gender":0,"id":2478344,"job":"Production
+        Secretary","name":"Sawyer Williams","profile_path":null},{"credit_id":"5ded7d72158c850015829520","department":"Crew","gender":0,"id":2478347,"job":"Production
+        Office Assistant","name":"Peter Tavis, Jr.","profile_path":null},{"credit_id":"5ded7dae85da12001a4998bd","department":"Production","gender":0,"id":2478353,"job":"Producer''s
+        Assistant","name":"Deborah Alexander","profile_path":null},{"credit_id":"5ded7de132489b0012c24057","department":"Production","gender":0,"id":2478358,"job":"Payroll
+        Accountant","name":"Kelly Trivigno","profile_path":null},{"credit_id":"5ded7e0785da12001749c631","department":"Crew","gender":0,"id":2478361,"job":"Set
+        Production Assistant","name":"Soren Miltich","profile_path":null},{"credit_id":"5ded7ebadc86470011c3f4d3","department":"Editing","gender":0,"id":2478366,"job":"Dailies
+        Manager","name":"Joe Violante","profile_path":null},{"credit_id":"5ded803ddc86470013c3d710","department":"Crew","gender":0,"id":2478373,"job":"Clearances
+        Consultant","name":"Jill Meyers","profile_path":null},{"credit_id":"5ded80750257640018535539","department":"Production","gender":0,"id":2478375,"job":"Publicist","name":"Caroline
+        Turner","profile_path":null},{"credit_id":"5ded8084025764001853554e","department":"Crew","gender":0,"id":2478378,"job":"Legal
+        Services","name":"Irwin J. Tenenbaum","profile_path":null},{"credit_id":"5ded8093158c8500158298c6","department":"Crew","gender":0,"id":2478379,"job":"Legal
+        Services","name":"Shani Hinton","profile_path":null},{"credit_id":"5ded80b70257640014535eeb","department":"Production","gender":0,"id":2478380,"job":"Finance","name":"Richard
+        V. McCune","profile_path":null},{"credit_id":"5ded80c5dc86470019c3d58e","department":"Production","gender":0,"id":2478381,"job":"Finance","name":"Erik
+        Piecuch","profile_path":null},{"credit_id":"5ded80eddc86470011c3fab4","department":"Production","gender":0,"id":2478382,"job":"Other","name":"Laura
+        Comerford","profile_path":null},{"credit_id":"5ded811a85da12001449c2db","department":"Production","gender":0,"id":2478384,"job":"Other","name":"Rebecca
+        Hawkes","profile_path":null},{"credit_id":"5ded812c158c85001882b630","department":"Production","gender":0,"id":2478385,"job":"Other","name":"Emma
+        Pindar","profile_path":null},{"credit_id":"5ded841985da12001a49a565","department":"Crew","gender":0,"id":2478396,"job":"Thanks","name":"Neil
+        Girardi","profile_path":null},{"credit_id":"5ded84450257640018535de4","department":"Crew","gender":0,"id":2478397,"job":"Thanks","name":"James
+        Hickey","profile_path":null}]}'
+  recorded_at: Wed, 14 Oct 2020 21:17:45 GMT
+recorded_with: VCR 6.0.0

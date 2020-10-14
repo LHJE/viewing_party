@@ -19,7 +19,6 @@ feature 'Searching by movie title' do
   end
 
   scenario "User searches using keywords", :vcr do
-
     fill_in 'Keywords', with: 'whatever'
     click_button('Search By Movie Title')
 

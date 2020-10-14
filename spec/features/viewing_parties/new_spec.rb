@@ -15,8 +15,6 @@ feature 'New viewing party' do
     party2 = @user1.parties.create!(movie_title: 'Spirited Away', date: '10/31/2020', time: '05:00 PM')
     party2.party_users.create!(party_id: party2.id, user_id: @user.id)
 
-
-
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
 
     visit "/new_party/#{@user.id}/princess_mononoke/134"

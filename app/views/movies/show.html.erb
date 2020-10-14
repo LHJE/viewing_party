@@ -34,5 +34,5 @@
 
 <h2>Similar Films:</h2>
 <% @movie.similar_films.each do |film| %>
-  <%= film[:title] %>
+  <p><%= link_to film[:title], "/movies/#{film[:id]}" %></br></p>
 <% end %>

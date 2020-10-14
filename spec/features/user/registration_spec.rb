@@ -45,7 +45,6 @@ RSpec.describe 'User Registration' do
         click_button 'Register'
 
         expect(page).to have_button('Register')
-
       end
 
       it 'I use a non-unique email' do

@@ -36,8 +36,12 @@ class MoviesController < ApplicationController
 
   def api_call(length, uri, url, key)
     results = []
-    conn = get_conn(url, key)
     page = 1
+    conn = get_conn(url, key)
+    get_json(length, uri, conn, results, page)
+  end
+
+  def get_json(length, uri, conn, results, page)
     until results.length >= length
       uri_with_page = uri + "&page=#{page}"
       res = conn.get(uri_with_page) do |f|

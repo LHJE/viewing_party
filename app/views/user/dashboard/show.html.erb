@@ -20,14 +20,15 @@
 
 <section class='parties', id='parties'>
   <h2>Viewing Parties:</h2>
-
-    <% current_user.all_parties.each do |party| %>
+  <% current_user.all_parties.each do |party| %>
     <section class='party' id='party-<%= party.id %>'>
       <h3><%= party.movie_title %></h3>
-      <ul>
-        <li>Date: <%= party.date %><br></li>
-        <li>Time: <%= party.time %><br></li>
-        <li> Status: <%= party.user_status(current_user.id) %></li>
+        <ul>
+          <li>Date: <%= party.date %><br></li>
+          <li>Time: <%= party.time %><br></li>
+          <li> Status: <%= party.user_status(current_user.id) %></li>
+        </ul>
     </section>
-    <% end %>
+  <% end %>
 </section>
+

@@ -37,6 +37,7 @@ feature 'Results for top 40 movies' do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
     visit '/discover'
   end
+  
   scenario "User clicks the top 40 button", :vcr do
       click_button('Discover Top 40')
       expect(current_path).to eq('/movies')

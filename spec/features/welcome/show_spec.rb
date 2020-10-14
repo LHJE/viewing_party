@@ -3,7 +3,6 @@ include ActionView::Helpers::NumberHelper
 
 RSpec.describe 'Welcome Page' do
   describe 'As a visitor' do
-
     before :each do
       visit root_path
     end

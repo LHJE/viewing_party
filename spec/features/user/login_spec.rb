@@ -20,7 +20,6 @@ RSpec.describe 'Login' do
 
     describe "If already logged in" do
       it "I do not see a login form or register link" do
-
         fill_in 'Email', with: @user.email
         fill_in 'Password', with: @user.password
 

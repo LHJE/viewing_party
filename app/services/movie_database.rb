@@ -25,10 +25,7 @@ class MovieDatabase
     key = ENV['NYT_MOVIE_REVIEWS_API_KEY']
     url = 'https://api.nytimes.com'
     uri = "/svc/movies/v2/reviews/search.json?api-key=#{ENV['NYT_MOVIE_REVIEWS_API_KEY']}&query=#{title}"
-    response = get_results(url, key, uri)[:results]
-    response.map do |review_data|
-      NytReview.new(review_data)
-    end
+    get_results(url, key, uri)[:results]
   end
 
   def self.movie_similar(movie_id)

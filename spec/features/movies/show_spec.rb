@@ -15,7 +15,7 @@ end
 
 feature 'Details for a movie' do
   before :each do
-    @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+    @user_1 = User.create(name: 'Jackie Chan', email: '56@56.com', password: '56', password_confirmation: '56')
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
     visit register_path
   end
@@ -56,5 +56,11 @@ feature 'Details for a movie' do
     expect(page).to have_content("District 13: Ultimatum")
     expect(page).to have_content("Malcolm X")
   end
-  # We need a sad path test for if there is not nyt review.
+
+  scenario "User visits a movie's page that has no nyt review", :vcr do
+    visit "/movies/724089"
+
+    expect(page).to have_content("Gabriel's Inferno Part II")
+    expect(page).to have_content("The New York Times has not reviewed this film")
+  end
 end

@@ -2,8 +2,7 @@ require 'rails_helper'
 
 feature 'New viewing party' do
   scenario "User visits a new viewing party page", :vcr do
-
-    @user = User.create!(name: 'Phil', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+    @user = User.create!(name: 'Phil', email: 'x@x.com', password: 'x', password_confirmation: 'x')
     @user1 = User.create!(name: 'Jade', email: 'b@a.com', password: 'a', password_confirmation: 'a')
     @user2 = User.create!(name: 'Robert', email: 'c@a.com', password: 'a', password_confirmation: 'a')
     @user3 = User.create!(name: 'Luke', email: 'd@a.com', password: 'a', password_confirmation: 'a')
@@ -14,8 +13,6 @@ feature 'New viewing party' do
 
     party2 = @user1.parties.create!(movie_title: 'Spirited Away', date: '10/31/2020', time: '05:00 PM')
     party2.party_users.create!(party_id: party2.id, user_id: @user.id)
-
-
 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
 
@@ -31,6 +28,5 @@ feature 'New viewing party' do
     check("invitees_#{@user2.id}", allow_label_click: true)
     click_button 'Create Party'
     expect(current_path).to eq('/user/dashboard')
-    # expect(page).to have_link('Princess Mononoke')
   end
 end

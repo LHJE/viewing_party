@@ -3,7 +3,6 @@ include ActionView::Helpers::NumberHelper
 
 RSpec.describe 'Welcome Page' do
   describe 'As a visitor' do
-
     before :each do
       visit root_path
     end
@@ -24,7 +23,7 @@ RSpec.describe 'Welcome Page' do
   describe 'As an authenticated user' do
     describe "When I visit the discover page" do
       before :each do
-        @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+        @user_1 = User.create(name: 'Jackie Chan', email: '12@12.com', password: '12', password_confirmation: '12')
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
         visit root_path
       end

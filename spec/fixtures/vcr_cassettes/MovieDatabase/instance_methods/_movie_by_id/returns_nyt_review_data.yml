@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nytimes.com/svc/movies/v2/reviews/search.json?api-key=<NYT_MOVIE_REVIEWS_API_KEY>&query=whatever_works
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<NYT_MOVIE_REVIEWS_API_KEY>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Oct 2020 23:23:42 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=600
+      Expires:
+      - Wed, 14 Oct 2020 23:33:42 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-pao17436-PAO
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1602717822.849907,VS0,VE455
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Content-Type, X-Forwarded-For, X-Prototype-Version, X-Requested-With
+      Access-Control-Expose-Headers:
+      - Content-Length, X-JSON
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","copyright":"Copyright (c) 2020 The New York Times Company.
+        All Rights Reserved.","has_more":false,"num_results":1,"results":[{"display_title":"Whatever
+        Works","mpaa_rating":"PG-13","critics_pick":0,"byline":"A. O. SCOTT","headline":"Kvetch
+        Your Enthusiasm","summary_short":"My problem with \u201cWhatever Works\u201d
+        is not that the premise is a wee bit familiar. Rather, it\u2019s that the
+        delivery is off.","publication_date":"2009-06-18","opening_date":"2009-07-03","date_updated":"2017-11-02
+        04:18:09","link":{"type":"article","url":"http:\/\/www.nytimes.com\/2009\/06\/19\/movies\/19whatever.html","suggested_link_text":"Read
+        the New York Times Review of Whatever Works"},"multimedia":null}]}'
+  recorded_at: Wed, 14 Oct 2020 23:23:42 GMT
+recorded_with: VCR 6.0.0

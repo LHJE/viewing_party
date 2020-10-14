@@ -13,13 +13,12 @@ end
 
 feature 'Searching by movie title' do
   before :each do
-    @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+    @user_1 = User.create(name: 'Jackie Chan', email: '34@34.com', password: '34', password_confirmation: '34')
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
     visit '/discover'
   end
 
   scenario "User searches using keywords", :vcr do
-
     fill_in 'Keywords', with: 'whatever'
     click_button('Search By Movie Title')
 
@@ -37,7 +36,7 @@ end
 
 feature 'Empty search results in top 40' do
   before :each do
-    @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+    @user_1 = User.create(name: 'Jackie Chan', email: '45@45.com', password: '45', password_confirmation: '45')
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
     visit '/discover'
   end

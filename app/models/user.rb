@@ -7,10 +7,10 @@ class User < ApplicationRecord
   validates :password, presence: { require: true }
   validates :password_confirmation, presence: { require: true }
 
-  has_many :friendships
+  has_many :friendships, dependent: :destroy
   has_many :friends, through: :friendships, source: :friend
 
-  has_many :parties
+  has_many :parties, dependent: :destroy
 
   def all_parties
     Party.where(user_id: id).or(Party.where(id: PartyUser.where(user_id: id).pluck(:party_id)))

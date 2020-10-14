@@ -45,7 +45,6 @@ RSpec.describe 'User Registration' do
         click_button 'Register'
 
         expect(page).to have_button('Register')
-
       end
 
       it 'I use a non-unique email' do
@@ -62,14 +61,13 @@ RSpec.describe 'User Registration' do
         expect(page).to have_button('Register')
         expect(page).to have_content("email: [\"has already been taken\"]")
       end
-
     end
   end
 
   describe 'As an authenticated user' do
     describe "When I visit the register page" do
       before :each do
-        @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
+        @user_1 = User.create(name: 'Jackie Chan', email: '90@90.com', password: '90', password_confirmation: '90')
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_1)
         visit register_path
       end
@@ -83,5 +81,4 @@ RSpec.describe 'User Registration' do
       end
     end
   end
-
 end

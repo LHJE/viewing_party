@@ -14,13 +14,13 @@ RSpec.describe 'Dashboard Page' do
 
   describe 'As an authenticated  user' do
     before :each do
-      @user_1 = User.create(name: 'Jackie Chan', email: 'a@a.com', password: 'a', password_confirmation: 'a')
-      @user_2 = User.create(name: 'Cynthia Rothrock', email: 'b@b.com', password: 'b', password_confirmation: 'b')
-      @user_3 = User.create(name: 'Michelle Yeoh', email: 'c@c.com', password: 'c', password_confirmation: 'c')
-      @user_4 = User.create(name: 'Bilbo Baggins', email: 'd@d.com', password: 'd', password_confirmation: 'd')
-      @user_5 = User.create(name: 'Gandolf', email: 'e@e.com', password: 'e', password_confirmation: 'e')
-      @user_6 = User.create(name: 'Sneezy', email: 'f@f.com', password: 'f', password_confirmation: 'f')
-      @user_7 = User.create(name: 'WTF', email: 'wtf@wtf.com', password: 'wtf', password_confirmation: 'wtf')
+      @user_1 = User.create(name: 'Jackie Chan', email: '67@67.com', password: '67', password_confirmation: '67')
+      @user_2 = User.create(name: 'Cynthia Rothrock', email: 'er@b.com', password: 'b', password_confirmation: 'b')
+      @user_3 = User.create(name: 'Michelle Yeoh', email: 'er@c.com', password: 'c', password_confirmation: 'c')
+      @user_4 = User.create(name: 'Bilbo Baggins', email: 'er@d.com', password: 'd', password_confirmation: 'd')
+      @user_5 = User.create(name: 'Gandolf', email: 'er@e.com', password: 'e', password_confirmation: 'e')
+      @user_6 = User.create(name: 'Sneezy', email: 'er@f.com', password: 'f', password_confirmation: 'f')
+      @user_7 = User.create(name: 'WTF', email: 'er@wtf.com', password: 'wtf', password_confirmation: 'wtf')
 
       @friendship_1 = Friendship.create(user_id: @user_1.id, friend_id: @user_2.id)
       @friendship_2 = Friendship.create(user_id: @user_2.id, friend_id: @user_1.id)
@@ -121,13 +121,12 @@ RSpec.describe 'Dashboard Page' do
       end
 
       it "I can add a new friend if they exist in the system" do
-        fill_in "New Friend's Email", with: 'wtf@wtf.com'
+        fill_in "New Friend's Email", with: 'er@wtf.com'
 
         click_button "Add Friend"
 
         expect(page).to have_content("WTF")
       end
-
 
       it "I can not add a new friend if they don't exist in the system" do
         fill_in "New Friend's Email", with: "z@z.com"
@@ -138,7 +137,7 @@ RSpec.describe 'Dashboard Page' do
       end
 
       it "I can not add a friend I already have" do
-        fill_in "New Friend's Email", with: "b@b.com"
+        fill_in "New Friend's Email", with: "er@b.com"
 
         click_button "Add Friend"
 
@@ -146,7 +145,7 @@ RSpec.describe 'Dashboard Page' do
       end
 
       it "I can not add myself as a friend" do
-        fill_in "New Friend's Email", with: "a@a.com"
+        fill_in "New Friend's Email", with: "67@67.com"
 
         click_button "Add Friend"
 

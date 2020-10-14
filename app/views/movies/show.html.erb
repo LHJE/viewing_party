@@ -26,13 +26,14 @@
 <% end %>
 
 <h2>New York Times Review Link:</h2>
-<% unless @movie.nyt_review.nil? %>
-  <p><%=  link_to @movie.nyt_review.headline, "#{@movie.nyt_review.url}" %></p>
+
+<% unless @movie.nyt_headline.nil? %>
+  <p><%=  link_to @movie.nyt_headline, "#{@movie.nyt_url}" %></p>
 <% else %>
   <p>The New York Times has not reviewed this film</p>
 <% end %>
 
 <h2>Similar Films:</h2>
 <% @movie.similar_films.each do |film| %>
-  <%= film[:title] %>
+  <p><%= link_to film[:title], "/movies/#{film[:id]}" %></br></p>
 <% end %>

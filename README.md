@@ -1,8 +1,7 @@
 # Viewing Party
+Viewing party is an application in which users can explore movie options and create a viewing party event for the user and friend's.	
 
-
-This is the base repo for the [viewing party project](https://backend.turing.io/module3/projects/viewing_party) used for Turing's Backend Module 3.	Viewing party is an application in which users can explore movie options and create a viewing party event for the user and friend's.
-
+This is the base repo for the [viewing party project](https://backend.turing.io/module3/projects/viewing_party) used for Turing's Backend Module 3.
 
 # About this Project  
 
@@ -10,8 +9,7 @@ This is the base repo for the [viewing party project](https://backend.turing.io/
 [Philip DeFraties](https://github.com/PhilipDeFraties)  
 [Luke Hunter James-Erickson](https://github.com/LHJE/)
 
-
-Viewing party is an application in which users can explore movie options and create a viewing party event for the user and friend's.	## Installation
+## Installation
 In order to install Viewing Party on your computer, simply copy the below into your terminal's command line, and hit 'return':
 
 ```
@@ -39,7 +37,8 @@ In that file, paste this:
 ```
 MOVIEDB_API_KEY: "<YOUR API KEY>"
 NYT_MOVIE_REVIEWS_API_KEY: "<YOUR API KEY>"
-```
+```  
+
 ## Usage
 To get this app up and running on your computer, simply type this into your command line and hit return:
 
@@ -59,43 +58,38 @@ gem 'vcr'
 gem "figaro"
 gem 'travis'
 gem "nyan-cat-formatter"
-```
+```  
+
 We're using `faraday` to allow for API calls.  
 We're using `figaro` to abstract the API Keys we're using.  
 We're using `webmock` and `vcr`  to stub out API calls for testing.  
 We're using `travis` to ensure that new changes to the build merge successfully.  
 And we added `nyan-cat-formatter` just for fun.
 
-
 ## Schema
 Below is our schema.
 
 ![our schema](/viewing_party_schema.png)
 
-
 ## Learning Goals
 For this project, we focused on learning:
  - How to consume API's  
  - How to keep API's concealed  
- - ...
+ - How and why to make POROs files.
 
 ## Future Changes
-
+- Add a dedicated `movies` table that would store information on the db so API calls don't need to be made every time.  
+- Abstracting the `top 40` and `keyword search` into the SearchFacade.  
 
 ## Code We're Proud Of
-
-
-
+- Calling a second API Key.  
+- The Movie Poro in general.
 
 ## Versions
-
 
 - Ruby 2.5.3	- Ruby 2.5.3
 
 - Rails 5.2.4.3	- Rails 5.2.4.3
-
-
-Example wireframes to follow are found [here](https://backend.turing.io/module3/projects/viewing_party/wireframes)	## Change Log
 
 2020-10-15: v 1.0
 

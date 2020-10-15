@@ -27,7 +27,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 14 Oct 2020 23:10:26 GMT
+      - Thu, 15 Oct 2020 14:10:44 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -40,27 +40,29 @@ http_interactions:
       Cache-Control:
       - public, max-age=21600
       X-Memc:
-      - MISS, STORE
+      - HIT
       X-Memc-Key:
       - 135c43205fc0868d6efb12198c474b5f
       X-Memc-Age:
-      - '0'
+      - '15189'
       X-Memc-Expires:
-      - '21600'
+      - '6411'
+      Etag:
+      - W/"d9fe63e6564f76be22bbf2c52366f188"
       Last-Modified:
-      - '2020-07-21 13:39:24 +0000'
+      - Thu, 15 Oct 2020 14:10:44 GMT
       Vary:
       - Accept-Encoding
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 045f1e1f031241f3808c557a2b5d6b0a.cloudfront.net (CloudFront)
+      - 1.1 ccb5889ae0aaf6afe39d69437fe706d5.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN50-C2
+      - IAH50-C4
       X-Amz-Cf-Id:
-      - iKTrI7NFh0AqOtGlhII9BF6m8Ah0JfwurrH9KznLm8s2v5Q82LnhhQ==
+      - 2Y60NJQofiZW2HZkHaoECxYTSsYAdcl68AbCJK2uzj5IlyXUQR4S-A==
       Age:
-      - '795'
+      - '12'
     body:
       encoding: ASCII-8BIT
       string: '{"id":19265,"cast":[{"cast_id":5,"character":"Boris Yellnikoff","credit_id":"52fe47ca9251416c750a596b","gender":2,"id":16376,"name":"Larry
@@ -251,5 +253,5 @@ http_interactions:
         Pindar","profile_path":null},{"credit_id":"5ded841985da12001a49a565","department":"Crew","gender":0,"id":2478396,"job":"Thanks","name":"Neil
         Girardi","profile_path":null},{"credit_id":"5ded84450257640018535de4","department":"Crew","gender":0,"id":2478397,"job":"Thanks","name":"James
         Hickey","profile_path":null}]}'
-  recorded_at: Wed, 14 Oct 2020 23:23:41 GMT
+  recorded_at: Thu, 15 Oct 2020 14:10:56 GMT
 recorded_with: VCR 6.0.0

@@ -27,7 +27,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 14 Oct 2020 23:10:26 GMT
+      - Thu, 15 Oct 2020 14:10:44 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -54,16 +54,16 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 38059ba65876500c040fb73e2cbaebf5.cloudfront.net (CloudFront)
+      - 1.1 dda997f5acee0f79dcf70db4a17d82f6.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN50-C2
+      - IAH50-C4
       X-Amz-Cf-Id:
-      - KPutYIEfSSBMkP2GQOVGajFCbQbDLEyfFy71Ry3Di_kYTp3fHbMOhA==
+      - UcX8f0-WnaEaIYZ8BlFdwoRdzfBnFctTgOX6ijsJ4v-UrHIc9JKBQw==
       Age:
-      - '11'
+      - '12'
     body:
       encoding: ASCII-8BIT
       string: '{"id":19265,"page":1,"results":[{"author":"markuspm","content":"It
         is an instant classic. One of my favorite movies for the holiday season.","id":"52b7d4d2760ee330850373c7","url":"https://www.themoviedb.org/review/52b7d4d2760ee330850373c7"}],"total_pages":1,"total_results":1}'
-  recorded_at: Wed, 14 Oct 2020 23:10:37 GMT
+  recorded_at: Thu, 15 Oct 2020 14:10:56 GMT
 recorded_with: VCR 6.0.0

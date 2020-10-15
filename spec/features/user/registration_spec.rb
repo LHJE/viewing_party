@@ -61,7 +61,6 @@ RSpec.describe 'User Registration' do
         expect(page).to have_button('Register')
         expect(page).to have_content("email: [\"has already been taken\"]")
       end
-
     end
   end
 
@@ -82,5 +81,4 @@ RSpec.describe 'User Registration' do
       end
     end
   end
-
 end

@@ -21,7 +21,6 @@ gem 'bootsnap'
 gem 'jbuilder', '~> 2.5'
 gem "figaro"
 
-
 group :development, :test do
   gem 'pry'
   gem 'travis'

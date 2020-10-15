@@ -81,7 +81,6 @@ RSpec.describe 'Dashboard Page' do
         fill_in 'Password', with: @user_1.password
 
         click_button "Log In"
-
       end
 
       it "I can see a personalized greeting if I navigate away, and navigate back" do
@@ -122,7 +121,6 @@ RSpec.describe 'Dashboard Page' do
       end
 
       it "I can add a new friend if they exist in the system" do
-
         fill_in "New Friend's Email", with: 'er@wtf.com'
 
         click_button "Add Friend"

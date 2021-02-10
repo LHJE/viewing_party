@@ -7,13 +7,13 @@ class MoviesController < ApplicationController
 
   def search
     if params[:keywords].nil? || params[:keywords] == ''
-      top_40
+      top_fourty
     else
       get_movies(2)
     end
   end
 
-  def top_40
+  def top_fourty
     key = ENV['MOVIEDB_API_KEY']
     uri = "/3/movie/top_rated?api_key=#{ENV['MOVIEDB_API_KEY']}&language=en-US"
     url = 'https://api.themoviedb.org'

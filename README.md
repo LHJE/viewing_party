@@ -3,6 +3,8 @@ Viewing party is an application in which users can explore movie options and cre
 
 This is the base repo for the [viewing party project](https://backend.turing.io/module3/projects/viewing_party) used for Turing's Backend Module 3.
 
+See this app deployed on [Heroko here](https://viewing-party-lhje.herokuapp.com/)
+
 # About this Project  
 
 ## Contributors

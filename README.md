@@ -45,8 +45,6 @@ To get this app up and running on your computer, simply type this into your comm
 rails s
 ```
 
-To see a functioning build of this app, please visit our Heroku [here](https://boiling-hamlet-64107.herokuapp.com/)
-
 ## Gems Being Utilized
 Here are the more relevant gems we've added to the base rails gems to make this app really sing:
 

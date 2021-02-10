@@ -25,7 +25,6 @@ RSpec.describe FriendNotifierMailer, type: :mailer do
     let(:mail) { FriendNotifierMailer.inform(email_info, 'b@b.com') }
 
     it 'renders the headers' do
-      # require "pry"; binding.pry
       expect(mail.subject).to eq("Rejoice Cynthia Rothrock! Jackie Chan is sending you an invitation to a Viewing Party!")
       expect(mail.to).to eq(['b@b.com'])
       expect(mail.from).to eq(['viewing@party.io'])
